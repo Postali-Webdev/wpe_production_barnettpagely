@@ -1,0 +1,3554 @@
+/*
+Theme Name: Barnett
+Theme URI: http://demo.qodeinteractive.com/passage/
+Description: A child theme of Passage Theme
+Author: Postali LLC
+Author URI: http://www.postali.com/
+Version: 1.0.0
+Template: passage
+*/
+@import url(../passage/style.css);
+
+@font-face {
+	font-family: "Alegreya Sans";
+	src: url('/wp-content/themes/barnett/fonts/alegreyasans/AlegreyaSans-Medium.woff2') format('woff2');
+	font-weight: 500;	
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Lora";
+	src: url('/wp-content/themes/barnett/fonts/lora/Lora-Regular.woff2') format('woff2');
+	font-weight: 400;	
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Lora";
+	src: url('/wp-content/themes/barnett/fonts/lora/Lora-Bold.woff2') format('woff2');
+	font-weight: 700;	
+	font-style: normal;
+	font-display: swap;
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		position: fixed !important;
+	}
+}
+
+.fluid-width-video-wrapper {
+	position: relative !important;
+	padding-top: 56.25% !important;
+	width: 100% !important;
+	overflow: hidden !important;
+}
+
+.fluid-width-video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.pagination .nav-links a.page-numbers { margin:0 5px; }
+.pagination .nav-links .page-numbers.current { padding: 10px; background: #6f2524; height: 30px; display: inline-flex; padding: 0; justify-content: center; align-items: center; width: 30px; height: 30px; border-radius: 50%; color: white; }
+
+.attorney-sub-title {
+	color: #6f2524;
+	font-style: italic;
+	font-size: 22px;
+}
+
+/* fixes to main nav drop-downs */
+.inner2 > ul > li > ul { margin-top:0px !important; background:rgba(39,49,56,.9) !important; min-width: 365px; white-space: nowrap; }
+.drop_down .second .inner2 ul li a { font-size: 12px !important; padding: 0 20px; line-height:200%; }
+.drop_down .second .inner2 ul li:last-child a { padding-bottom: 8px; } 
+.drop_down .second .inner2 ul li ul li:last-child a { padding-bottom: 8px !important; }
+.drop_down .second .inner2 ul li:last-child a { padding-bottom: 0 !important; }
+.drop_down .second .inner2 ul li:last-child { border-bottom:none !important; }
+
+#nav-menu-item-1808 > a,
+#nav-menu-item-1839 > a,
+#nav-menu-item-1811 > a,
+#nav-menu-item-1847 > a,
+#nav-menu-item-1867 > a,
+#nav-menu-item-1837 > a { padding-bottom:0 !important; }
+
+.subheader, h1 {
+	text-transform: uppercase
+}
+.logo, header {
+	-webkit-animation: none!important
+}
+.content .column1 .column_inner ol li ul, .content .column1 .column_inner ul li ul, .textpanel ul li ul {
+	list-style-position: outside
+}
+body, body p {
+	font-family: Lora, serif;
+	font-style: normal;
+	font-weight: 400
+}
+.quote_right, h1, h2, h3, h4, h5, h6 {
+	font-family: "Alegreya Sans", sans-serif;
+	font-style: normal
+}
+body a {
+	transition: all .1s ease-in-out
+}
+body a:hover {
+	text-decoration: underline
+}
+h1, h2, h3, h4, h5, h6 {
+	line-height: 100%;
+	font-weight: 400
+}
+.subheader, h3, h4 {
+	font-weight: 700
+}
+.header_underline {
+	position: relative;
+	padding-bottom: 55px;
+	margin-bottom: 0!important
+}
+.header_underline::after, .header_underline::before {
+	bottom: .8em;
+	content: "";
+	position: absolute;
+	display: block
+}
+.header_underline::before {
+	background-color: transparent;
+	border-top: 1px solid #d9d9d9;
+	height: 2px;
+	left: 20%;
+	width: 60%
+}
+.header_underline::after {
+	background-clip: padding-box;
+	background-color: #fff;
+	background-image: url(/wp-content/themes/barnett/images/header-underline.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: 30px 28px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	height: 32px;
+	left: 50%;
+	margin-bottom: -12px;
+	margin-left: -15px;
+	width: 32px
+}
+.content .column1 .column_inner ul li:before, .page-id-32 .container_inner2 ul li:before, .page-id-3168 .container_inner2 ul li:before, .textpanel ul li:before {
+	content: "\e915";
+	vertical-align: top
+}
+.subheader {
+	color: #c90a02 !important;
+	margin: 5px 0 18px;
+	line-height: 30px
+}
+.quote_right {
+	font-size: 1.1em;
+	font-weight: 300;
+	line-height: 150%;
+	margin: 0
+}
+.content_width_75 {
+	display: block;
+	width: 85%;
+	font-size: 1.2em;
+	margin: 18px auto;
+	text-align: center
+}
+.button_outline, .button_red {
+	display: inline-block;
+	font-family: "Alegreya Sans", sans-serif;
+	font-weight: 400;
+	position: relative
+}
+.button_outline {
+	font-size: .9em;
+	padding: 6px 35px;
+	background: 0 0;
+	border-radius: 5px;
+	border: 2px solid #6f2524
+}
+.button_outline:hover {
+	text-decoration: none;
+	background: #6f2524;
+	color: #fff
+}
+.button_red {
+    font-size: .9em;
+    padding: 6px 35px 4px;
+    background: #c90a02;
+    border-radius: 0;
+    border-bottom: 7px solid #6f2524;
+    color: #fff;
+}
+
+.button_red:hover {
+	text-decoration: none;
+	background: #6f2524;
+	color: #fff;
+	border-bottom: 7px solid #c90a02
+}
+.container_inner .container_inner2 {
+	padding-top: 10px;
+	padding-bottom: 10px
+}
+.container_inner2 .two_columns_66_33.grid2>.column1>.column_inner {
+	padding: 0 50px 0 0
+}
+
+.container_inner2 .two_columns_66_33.grid2>.column1>.column_inner iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+.disclaimer {
+	font-size: .9em;
+	line-height: 100%;
+	font-style: italic;
+	margin: 0 0 20px
+}
+.accent_box_red {
+	display: block;
+	background: url(/wp-content/uploads/2016/02/accent-bar-background.png) #6f2524;
+	padding: 20px 22px 10px;
+	margin-top: 10px;
+	border-bottom: 7px solid #93413e;
+	text-align: center
+}
+.accent_box_red h4 {
+	text-align: center;
+	color: #fff;
+	margin-bottom: 25px
+}
+.accent_box_red p {
+	text-align: left;
+	color: #fff;
+	font-family: "Alegreya Sans", sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 21px
+}
+.accent_box_red a {
+	color: #fff;
+	text-decoration: underline
+}
+.accent_box_red ul li {
+	color: #fff
+}
+.accent_box_red a:hover {
+	color: #c90a02
+}
+.accent_box_red i {
+	display: block;
+	color: #d3cea5;
+	font-size: 74px
+}
+.slider_header, .slider_subheader {
+	color: #fff;
+	font-style: normal;
+	display: block;
+	text-transform: uppercase
+}
+.full_width, .full_width .container_inner {
+	padding: 0
+}
+.textpanel {
+	display: block;
+	position: relative;
+	padding: 35px 0 30px 0px;
+	max-width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box
+}
+.textpanel.tan { 
+  background: #faf9f1; 
+}
+.textpanel h2 {
+	text-align: center
+}
+.parallax section {
+	background-size: cover
+}
+.full_width .parallax_content {
+	width: 100%;
+	margin: 0 auto
+}
+.block_spacer {
+	display: block;
+	background: #f3f1df;
+	height: 190px;
+	margin-top: -95px
+}
+.textpanel iframe { 
+  margin: 10px 0px;
+ }
+#homepage_slider {
+	background: url(/wp-content/uploads/2024/08/Barnett-Homepage-Header-700h.jpg) top center no-repeat #000;
+	height: 700px;
+	padding: 250px 0 0;
+	position: relative;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover
+}
+#homepage_slider .caption {
+	position: absolute;
+	left: 35%;
+	width: 60%;
+	text-align: center;
+	overflow: hidden;
+	box-sizing: border-box
+}
+.slider_subheader {
+	font-size: 1.9em;
+	line-height: 120%;
+	letter-spacing: 1px;
+	font-family: "Alegreya Sans", sans-serif;
+	font-weight: 400;
+	text-shadow: 0 2px 4px rgba(0,0,0,.6)
+}
+.slider_header {
+	font-family: Khand, sans-serif;
+	font-weight: 700;
+	font-size: 4em;
+	line-height: 90%;
+	text-shadow: 0 2px 10px rgba(0,0,0,.6)
+}
+.slider_search {
+	box-sizing: border-box;
+	position: relative!important;
+	z-index: 1000!important;
+	display: block;
+	width: 65%;
+	margin: 20px auto 30px;
+	padding: 14px 10px 0;
+	background: rgba(44,44,44,.8);
+	border-radius: 10px;
+	overflow: hidden
+}
+.search .slider_search {
+	width: 100%;
+  padding: 14px 10px;
+}
+.slider_search input {
+	z-index: 1000!important;
+	display: inline-block;
+	font-style: italic;
+	box-sizing: border-box;
+	width: 78%;
+	margin: 0;
+	padding: 12px 3%;
+	border-radius: 10px 0 0 10px;
+	font-size: 22px;
+	font-family: Lora, serif
+}
+.practice_area_button, .redpanel p {
+	font-family: "Alegreya Sans", sans-serif;
+	font-style: normal
+}
+.slider_search input[type=submit] {
+	z-index: 1000!important;
+	width: 20%;
+	font-style: normal;
+	font-size: 14px;
+	height: 51px;
+	border-radius: 0 10px 10px 0;
+	vertical-align: top;
+	margin-left: -5px;
+	background: #c90a02;
+	transition: all .1s ease-in-out
+}
+.slider_search input[type=submit]:hover {
+	background: #dd2d25;
+	width: 21%;
+	margin-left: -8px
+}
+.slider_phone {
+	display: block;
+	font-size: 2.2em;
+	font-weight: 500;
+	line-height: 120%;
+	letter-spacing: -1px;
+	color: #090f13;
+	border: 0;
+	margin-top: 20px
+}
+.slider_phone .ibp, .slider_phone a {
+	color: #fff
+}
+.slider_phone i {
+	color: #c90a02;
+	font-size: .8em;
+	margin-right: 4px
+}
+#homepage_slider .slider_phone {
+	display: none
+}
+#homepage_slider .accreditations li {
+	margin: 4% 2% 5% 0!important
+}
+#homepage_slider .accreditations_disclaimer {
+	color: #fff;
+	width: 68%;
+	margin: 6px auto;
+	border: 1px solid #fff
+}
+.accreditations {
+	margin: 15px
+}
+.accreditations li {
+	margin: 4% 2.5% 5% 0!important;
+	display: inline
+}
+.accreditations li:last-child {
+	margin-right: 0!important
+}
+.accreditations li:before {
+	display: none
+}
+.accreditations li img {
+	max-height: 80px;
+	max-width: 150px;
+	width: auto
+}
+.accreditations_disclaimer {
+	font-size: .65em!important;
+	line-height: 125%;
+	text-align: left;
+	padding: 6px 8px 8px;
+	border-radius: 4px;
+	border: 1px solid #6f2524;
+	margin-top: 8px
+}
+#homepage_intro h1, #homepage_sex_crimes .five_columns, #homepage_sex_crimes h2 {
+	text-align: center
+}
+#homepage_intro {
+	background: #fff
+}
+#homepage_intro h1 {
+	margin-bottom: 10px
+}
+#homepage_intro .column1 .column_inner {
+	padding-right: 50px;
+	text-align: center
+}
+.video_thumb {
+	display: inline;
+	max-width: 47%;
+	margin: 10px 1.5%;
+	border-bottom: 6px solid #93413e
+}
+.video_thumb:hover {
+	border-bottom: 6px solid #c90a02
+}
+#homepage_sex_crimes {
+	background: #F4F2E7;
+	padding: 30px 0 0;
+	border-radius: 40%/8%
+}
+#homepage_sex_crimes h3 {
+	margin: 15px 0 8px;
+	font-size: 32px
+}
+#homepage_sex_crimes .header_underline::after {
+	background-color: #f3f1df
+}
+#homepage_sex_crimes .column1 .column_inner {
+	padding-right: 60px
+}
+
+#homepage_sex_crimes .five_columns {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#homepage_sex_crimes .five_columns .column1,
+#homepage_sex_crimes .five_columns .column2,
+#homepage_sex_crimes .five_columns .column3,
+#homepage_sex_crimes .five_columns .column4,
+#homepage_sex_crimes .five_columns .column5 {
+    width: 19%;
+    background: white;
+    padding: 25px 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#homepage_sex_crimes .five_columns .column1::after,
+#homepage_sex_crimes .five_columns .column2::after,
+#homepage_sex_crimes .five_columns .column3::after,
+#homepage_sex_crimes .five_columns .column4::after,
+#homepage_sex_crimes .five_columns .column5::after {
+    position: absolute;
+    top: 63px;
+    left: 25px;
+    content: "\2605";
+    color: white;
+    background: #AF3331;
+    height: 23px;
+    width: 23px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+#homepage_sex_crimes .five_columns h3 {
+	margin: 0 0 30px;
+    display:block;
+    width:100%;
+}
+#homepage_sex_crimes .five_columns>.column1>.column_inner {
+	padding: 0 18px 0 0!important
+}
+#homepage_sex_crimes .five_columns>.column2>.column_inner, #homepage_sex_crimes .five_columns>.column3>.column_inner, #homepage_sex_crimes .five_columns>.column4>.column_inner, #homepage_sex_crimes .five_columns>.column5>.column_inner {
+	padding: 0 18px 0 0
+}
+#homepage_sex_crimes h5 {
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-top: 8px;
+    color:#AF3331;
+}
+#homepage_sex_crimes .five_columns p {
+	font-size: 17px;
+	line-height: 120%;
+	margin: 7px 0
+}
+#homepage_practice_areas {
+	background: #6f2524;
+	padding: 70px 80px 45px;
+	overflow: hidden
+}
+
+#homepage_practice_areas p a {
+    color: white;
+    text-decoration: underline;
+}
+
+#homepage_practice_areas .five_columns {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: normal;
+    margin-bottom: 0;
+}
+
+#homepage_practice_areas .five_columns .column1,
+#homepage_practice_areas .five_columns .column2,
+#homepage_practice_areas .five_columns .column3,
+#homepage_practice_areas .five_columns .column4,
+#homepage_practice_areas .five_columns .column5 {
+    margin: 1%;
+    display: flex;
+    height: auto;
+}
+
+#homepage_practice_areas .five_columns .column1 .column_inner,
+#homepage_practice_areas .five_columns .column2 .column_inner,
+#homepage_practice_areas .five_columns .column3 .column_inner,
+#homepage_practice_areas .five_columns .column4 .column_inner,
+#homepage_practice_areas .five_columns .column5 .column_inner {
+    padding: 0;
+    width: 100%;
+}
+
+#homepage_practice_areas p {
+	color: #fff;
+	font-size: 17px;
+	line-height: 24px
+}
+#homepage_practice_areas h5, .practice_area_button {
+	line-height: 90%;
+	color: #fff;
+	text-transform: uppercase
+}
+#homepage_practice_areas h5 {
+	letter-spacing: 1px;
+	margin: 0
+}
+#homepage_practice_areas h2 {
+	color: #fff;
+	margin-bottom: 25px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #752e2b;
+	text-align: left
+}
+.five_columns {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 8px;
+	box-sizing: border-box
+}
+.five_columns>.column1, .five_columns>.column2, .five_columns>.column3, .five_columns>.column4, .five_columns>.column5 {
+	width: 20%;
+	float: left
+}
+.five_columns>.column1>.column_inner {
+	padding: 0 8px 0 0!important
+}
+.five_columns>.column2>.column_inner, .five_columns>.column3>.column_inner {
+	padding: 0 8px 0 0
+}
+.five_columns>.column4>.column_inner {
+	padding: 0
+}
+.five_columns>.column5>.column_inner {
+	padding: 0 0 0 8px
+}
+.practice_area_button {
+	display: block;
+	padding: 25px 20px 55px;
+	min-height: 94px;
+	background: white;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	transition: all .1s ease-in-out;
+    outline: 2px solid #6f2524;
+    outline-offset: -8px;
+    color: #6f2524;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.practice_area_button::after {
+    position: absolute;
+    bottom: 20px;
+    content: "\2192";
+    left: 0;
+    transform: translateX(50%);
+    width: 50%;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.practice_area_button:hover {
+	background: rgba(220,39,43,1);
+	color: #fff;
+	text-decoration: none
+}
+.practice_area_button i {
+	display: block;
+	margin: 0 auto 10px;
+	font-size: 44px
+}
+#homepage_dui {
+	background: #fff;
+	padding: 30px 0 20px
+}
+#homepage_dui .column1 .column_inner {
+	padding-right: 70px
+}
+#homepage_dui .column1 .column_inner p:nth-of-type(1) {
+	margin-top: 0
+}
+#homepage_dui img {
+	margin-top: 8px
+}
+.redpanel {
+	background: url(/wp-content/uploads/2016/02/accent-bar-background.png) #6f2524;
+	padding: 25px 0;
+	border-bottom: 5px solid #93413e
+}
+.redpanel p {
+	color: #fff;
+	margin: 0;
+	font-weight: 400;
+	font-size: 2em;
+	line-height: 120%;
+	padding-top: 6px
+}
+.redpanel a {
+	position: relative;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1em;
+	padding: 12px 55px 12px 20px;
+	background: 0 0;
+	border-radius: 5px;
+	color: #fff;
+	border: 2px solid #fff
+}
+.redpanel a:hover {
+	text-decoration: none;
+	background: #171f25
+}
+.redpanel a i {
+	position: absolute;
+	right: 14px;
+	top: 16px;
+	font-size: .8em
+}
+#homepage_about {
+	background: url(/wp-content/uploads/2024/08/barnett-pre-footer.jpg) top left no-repeat, url(/wp-content/uploads/2016/02/homepage-about-texas.png) 90% 35% no-repeat #f3f1df;
+	padding: 15px 0 20px
+}
+#homepage_about .column2 .column_inner {
+	padding: 0
+}
+.attorney_quote {
+	font-family: Khand, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 2.3em;
+	line-height: 110%;
+	margin: 15px 0 10px
+}
+#homepage_about .arrow-right-3 {
+	margin: 1px 3px 0 0;
+	font-size: 16px;
+	color: #6f2524
+}
+#homepage_about .accreditations {
+	margin: 20px 0 10px
+}
+#homepage_about .accreditations li {
+	margin: 5% 3.5% 5% 0!important;
+	line-height: 40px
+}
+#homepage_about .accreditations li img {
+	max-height: 85px
+}
+#homepage_criminal_defense {
+	background: #fff;
+	text-align: center;
+	padding-bottom: 20px
+}
+#homepage_criminal_defense i {
+	display: block;
+	color: #d3cea5;
+	font-size: 66px
+}
+#homepage_mobile, .textpanel ul li ul li:before {
+	display: none
+}
+#homepage_criminal_defense .column1 .column_inner, #homepage_criminal_defense .column2 .column_inner {
+	padding: 0 20px
+}
+#homepage_areas_served {
+	background: url(/wp-content/uploads/2016/03/homepage-areas-served-background.jpg) top right no-repeat #171f25
+}
+#homepage_areas_served .column1 .column_inner {
+	padding-right: 50px
+}
+#homepage_areas_served h2 {
+	color: #fff;
+	font-size: 42px;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #752e2b
+}
+#homepage_areas_served p, #homepage_areas_served ul li {
+	color: #fff
+}
+#homepage_areas_served a {
+	color: #d3cea5
+}
+#homepage_areas_served ul {
+	margin: 25px 0 0!important;
+	width: 98%;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 20px;
+	-moz-column-count: 2;
+	-moz-column-gap: 20px;
+	column-count: 2;
+	column-gap: 20px
+}
+.textpanel ul {
+	margin: 16px 0 16px 3px
+}
+.textpanel ul li {
+	margin: 0 0 10px 24px;
+	line-height: 26px
+}
+.textpanel ul li:before {
+	font-size: 7px;
+	font-family: icomoon;
+	margin: 0 10px 0 -18px;
+	color: #6f2524
+}
+.two_column_list {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 32px;
+  -moz-column-count: 2;
+  -moz-column-gap: 32px;
+  column-count: 2; 
+  column-gap: 32px; 
+}
+.two_column_list li {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid-column;
+}
+.drop_down .second .inner2 ul li a, nav.main_menu>ul>li>a {
+	font-family: "Alegreya Sans", sans-serif!important;
+	font-style: normal
+}
+.textpanel ul li ul li {
+	list-style-type: disc;
+	list-style-image: none
+}
+.content .column1 .column_inner ol li, .textpanel ul li ol li {
+	list-style-type: decimal;
+	list-style-image: none
+}
+.logo {
+	float: none;
+	position: relative;
+	display: block;
+	margin: 10px 0 15px;
+	-webkit-animation: none!important;
+	        animation: none!important
+}
+.logo img {
+	top: 15%;
+	height: 44px !important;
+}
+.logo a {
+	height: 44px!important;
+	visibility: visible !important;
+}
+.header_inner_right {
+	float: left!important
+}
+#mobile_header_phone {
+	display: none
+}
+header {
+	background: linear-gradient(0deg, rgba(23,31,37,1) 0%, rgba(23,31,37,1) 33%, rgba(175,51,49,1) 33%, rgba(175,51,49,1) 36%, rgba(111,37,36,1) 36%, rgba(111,37,36,1) 100%);
+	-webkit-animation: none!important;
+	        animation: none!important
+}
+header .container {
+	height: 114px !important;
+}
+nav.main_menu>ul>li>a {
+	padding: 0 26px;
+	text-transform: uppercase;
+	font-weight: 400;
+	-webkit-animation: none!important;
+	animation: none!important
+}
+nav.main_menu>ul>li:first-child a {
+	padding-left: 0
+}
+nav.main_menu>ul>li:last-child a {
+	padding-right: 0
+}
+nav.main_menu>ul>li>a:hover {
+	text-decoration: underline
+}
+nav.main_menu>ul>li>a span {
+	border-bottom: 0!important
+}
+#magic {
+	display: none!important
+}
+.drop_down .second .inner2 {
+	background: rgba(23,31,37,1)
+}
+.drop_down .second {
+	margin-top: -10px
+}
+.drop_down .second .inner2 ul li {
+	border-bottom: 1px solid #486275
+}
+.drop_down .second .inner2 ul li a {
+	font-weight: 400!important
+}
+.drop_down .second .inner2 ul li:last-child a {
+	border: 0;
+	padding-bottom: 15px
+}
+.drop_down .second .inner ul li ul, .drop_down2 .second .inner, .header_right_widget #lang_sel ul ul, .header_right_widget #lang_sel_click ul ul {
+	background: rgba(23,31,37,.9)
+}
+.header_phone_widget .widget:nth-of-type(1) {
+	background: url(/wp-content/uploads/2016/02/header-phone-widget-background.png) top left no-repeat;
+	color: #fff;
+	padding: 0 0 4px 54px;
+	margin-bottom: 15px
+}
+.header_phone_widget {
+	position: absolute;
+	right: 0;
+	top: 9px
+}
+.header_phone_widget p {
+	color: #fff;
+	font-family: "Alegreya Sans", sans-serif;
+	font-size: .7em;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 2px;
+	line-height: 120%;
+	margin: -3px 0 0;
+	padding-bottom: 3px;
+	text-transform: uppercase
+}
+.header_phone_widget .ibp, ol, ol p, ul p {
+	font-family: Lora, serif
+}
+.header_phone_widget .ibp {
+	color: #fff;
+	font-size: 1.65em;
+	font-weight: 500;
+	margin-bottom:-16px;
+}
+#breadcrumbs a, #sitemap a, .practice_area_intro, .quote_left {
+	font-weight: 400
+}
+.header_phone_widget input[type=text] {
+	width: 88%;
+	font-family: Lora, serif;
+	font-size: 14px!important;
+	font-style: italic;
+	background: #fff;
+	border: 1px solid #fff;
+	color: #4d4d4d;
+	padding: 2px 4%;
+	border-radius: 3px;
+	margin: 0;
+	transition: all .1s ease-in-out;
+	box-sizing: border-box
+}
+.quote_left, ol {
+	font-style: normal
+}
+.header_phone_widget input[type=text]:focus {
+	border: 1px solid #ac5a59
+}
+.header_phone_widget input[type=submit] {
+	width: 10%;
+	font-size: 19px!important;
+	font-family: icomoon!important;
+	font-weight: 400;
+	padding: 5px 3% 5px 2%;
+	background: 0 0
+}
+#breadcrumbs, .practice_area_intro, .quote_left {
+	font-family: "Alegreya Sans", sans-serif
+}
+.header_phone_widget input[type=submit]:hover {
+	color: #c90a02
+}
+.title .container {
+	bottom: 280px;
+	padding: 0 20px
+}
+.title h1 {
+	text-transform: none
+}
+#breadcrumbs {
+	font-size: 14px;
+	margin: 6px 0 0;
+	color: #fff
+}
+#breadcrumbs a {
+	color: #fff!important
+}
+.breadcrumbs_separator {
+	color: #c90a02
+}
+.practice_area_intro {
+	display: block;
+	padding: 20px 10px 25px 0;
+	font-style: normal;
+	font-size: 1.3em;
+	color: #171f25;
+	line-height: 140%;
+	margin: 0 0 30px;
+	border-bottom: 1px solid #93413e
+}
+.page-id-40 .two_columns_66_33 .column1 .column_inner {
+	padding-right: 50px
+}
+.page-id-40 .two_columns_66_33 .column2 {
+	text-align: center
+}
+.page-id-40 .two_columns_66_33 h4 {
+	margin: 8px 0 12px
+}
+.page-id-40 .container_inner2 i {
+	display: block;
+	color: #d3cea5;
+	font-size: 64px;
+	line-height: 85%;
+	margin-top: 10px
+}
+.page-id-40 .three_columns {
+	margin-top: 25px
+}
+.practice_area_thumb {
+	padding: 0 10px;
+	box-sizing: border-box;
+	text-align: center
+}
+.practice_area_thumb img {
+	border-bottom: 6px solid #93413e
+}
+.practice_area_thumb:hover img {
+	border-bottom: 6px solid #c90a02
+}
+.practice_area_thumb h4 {
+	margin: 7px 0 0;
+	text-transform: uppercase
+}
+.practice_area_thumb h4 a {
+	font-size: 22px
+}
+.practice_area_thumb p {
+	margin: 4px;
+	font-size: 16px;
+	line-height: 140%
+}
+.practice_area_sidebar { 
+  padding-right: 30px;
+}
+#sex_crimes_children_intro h5, #sex_crimes_intro h5 {
+	background: #171f25;
+	border-bottom: 4px solid #752e2b;
+	margin: 10px 0 15px;
+	text-align: center
+}
+#sex_crimes_slider {
+	background: url(/wp-content/uploads/2016/03/sex-crimes-intro-background.jpg) top center no-repeat #fff;
+	height: 620px;
+	padding: 275px 0 0;
+	position: relative;
+	background-size: cover;
+	-webkit-background-size: cover;
+	border-bottom: 5px solid #6f2524
+}
+#title_ix_slider {
+	background: url(/wp-content/uploads/2020/07/barnett-practice-area-title-ix-header-img-1.jpg) top center no-repeat #fff;
+	height: 620px;
+	padding: 275px 0 0;
+	position: relative;
+	background-size: cover;
+	-webkit-background-size: cover;
+	border-bottom: 5px solid #6f2524
+}
+#sex_crimes_slider .caption {
+	position: absolute;
+	left: 40%;
+	width: 50%;
+	text-align: center;
+	overflow: hidden
+}
+#title_ix_slider .caption {
+	position: absolute;
+	left: 40%;
+	width: 50%;
+	text-align: center;
+	overflow: hidden
+}
+#sex_crimes_contact h2, #sex_crimes_types ul {
+	text-align: left
+}
+#sex_crimes_slider .slider_subheader {
+	color: #f5f5f5;
+	font-size: 1.6em;
+	line-height: 100%;
+	text-shadow: none
+}
+#sex_crimes_slider .slider_header {
+	color: #fff;
+	font-size: 5.8em;
+	line-height: 90%;
+	text-shadow: none
+}
+#sex_crimes_slider .slider_phone {
+	color: #fff
+}
+#title_ix_slider .slider_subheader {
+	color: #f5f5f5;
+	font-size: 1.6em;
+	line-height: 100%;
+	text-shadow: none
+}
+#title_ix_slider .slider_header {
+	color: #fff;
+	font-size: 5.8em;
+	line-height: 90%;
+	text-shadow: none
+}
+#title_ix_slider .slider_phone {
+	color: #fff
+}
+#sex_crimes_intro .column1 .column_inner {
+	padding-right: 60px
+}
+#sex_crimes_intro h5 {
+	font-size: 22px;
+	color: #fff;
+	padding: 15px 15px 11px
+}
+#sex_crimes_consequences .column1 .column_inner { 
+  padding-right: 35px;
+}
+#sex_crimes_consequences .column2 .column_inner { 
+  padding-left: 35px;
+} 
+#sex_crimes_consequences h2 { 
+  margin-bottom: 10px;
+}
+#sex_crimes_consequences i, #sex_crimes_children_rights i { 
+  margin-right: 10px;
+}
+#sex_crimes_registration .column1 .column_inner { 
+  padding-right: 60px;
+}
+#sex_crimes_defenses { 
+  background: url(/wp-content/uploads/2016/02/homepage-about-background.jpg) 0% 50% no-repeat #f4f4f4;
+}
+#sex_crimes_defenses { 
+  background: url(/wp-content/uploads/2018/01/textpanel-city-background.jpg) 50% 50% no-repeat #f4f4f4;
+  background-size: cover;
+}
+#sex_crimes_defenses h3 { 
+  text-align: center;
+}  
+#sex_crimes_contact {
+	background: url(/wp-content/uploads/2016/02/homepage-about-background.jpg) -30px 0 no-repeat #f3f1df;
+	padding: 15px 0
+}
+#sex_crimes_contact p {
+ font-size: 0.9em; 
+ line-height: 150%;
+}
+#sex_crimes_children_slider {
+	background: url(/wp-content/uploads/2016/03/sex-crimes-children-intro-background.jpg) top center no-repeat #fff;
+	height: 620px;
+	padding: 275px 0 0;
+	position: relative;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	border-bottom: 5px solid #6f2524
+}
+#sex_crimes_children_slider .caption {
+	position: absolute;
+	left: 40%;
+	width: 50%;
+	text-align: center;
+	overflow: hidden
+}
+#sex_crimes_children_slider .slider_subheader {
+	color: #000;
+	font-size: 1.8em;
+	line-height: 100%;
+	text-shadow: none
+}
+#sex_crimes_children_slider .slider_header {
+	color: #090f13;
+	font-size: 5.4em;
+	line-height: 90%;
+	text-shadow: none
+}
+#sex_crimes_children_slider .ibp, #sex_crimes_children_slider .slider_phone a {
+	color: #090f13!important
+}
+
+#sex_crimes_children_charges {
+	background: #f4f4f4;
+	text-align: center;
+	padding: 30px 0 15px
+}
+#sex_crimes_children_rights .column1 .column_inner {
+	padding-right: 35px;
+}
+#sex_crimes_children_rights .column2 .column_inner {
+	padding-left: 35px;
+}
+#sex_crimes_children_rights h2 {
+	text-align: left;
+}
+#sex_crimes_children_rights .accent_box_red {
+  margin: 20px 0px 40px 0px;
+}
+#sex_crimes_children_registration { 
+    /* background: url(/wp-content/uploads/2018/01/textpanel-city-background.jpg) 50% 50% no-repeat #f4f4f4; */
+}
+#sex_crimes_children_registration .column1 .column_inner {
+	padding-right: 35px;
+}
+#sex_crimes_children_registration .column2 .column_inner {
+	padding-left: 35px;
+}
+#sex_crimes_children_registration .content_width_75 { 
+     text-align: left;
+     margin: 15px 0px;
+     width: 100%;  
+}
+.page-id-32 .two_columns_66_33 .column1 .column_inner, .page-id-3168 .two_columns_66_33 .column1 .column_inner {
+	padding-right: 40px
+}
+.page-id-32 .two_columns_66_33 .column2, .page-id-3168 .two_columns_66_33 .column2 {
+	background: #fff;
+	margin-top: -80px
+}
+.page-id-32 .two_columns_66_33 .column2 .column_inner, .page-id-3168 .two_columns_66_33 .column2 .column_inner {
+	padding: 25px
+}
+.page-id-32 h4, .page-id-3168 h4{
+	background: #fff;
+	text-align: center;
+	padding-top: 20px
+}
+.page-id-32 .header_underline, .page-id-3168 .header_underline {
+	padding-bottom: 45px
+}
+.quote_left {
+	margin: 25px 0 30px;
+	font-size: 1.5em;
+	line-height: 130%;
+	padding-left: 25px;
+	border-left: 7px solid #c90a02
+}
+.page-id-32 .accreditations, .page-id-3168 .accreditations {
+	margin: 30px 0 15px!important
+}
+.page-id-32 .accreditations li, .page-id-3168 .accreditations li {
+	margin: 4% 4% 5% 0!important;
+	line-height: 50px!important
+}
+.page-id-32 .accreditations li:before, .page-id-3168 .accreditations li:before {
+	display: none
+}
+.page-id-32 .container_inner2 ul, .page-id-3168 .container_inner2 ul {
+	margin: 5px 0 16px 3px
+}
+.page-id-32 .container_inner2 ul li, .page-id-3168 .container_inner2 ul li {
+	margin: 0 0 8px 24px;
+	line-height: 23px;
+	font-size: 16px
+}
+.page-id-32 .container_inner2 ul li:before, .page-id-3168 .container_inner2 ul li:before {
+	font-size: 6px;
+	font-family: icomoon;
+	margin: 0 10px 0 -18px;
+	color: #6f2524
+}
+.page-id-36 .two_columns_66_33 .column1 .column_inner {
+	padding-right: 60px
+}
+.page-id-36 h1 {
+	text-align: center;
+	margin-top: 20px
+}
+.page-id-36 .three_columns {
+	padding: 0 25px
+}
+.page-id-36 .container_inner2 img {
+	margin: 20px 0 5px
+}
+.icon_container {
+	display: block;
+	padding: 0;
+	margin: 10px 0 15px
+}
+.icon_content {
+	padding: 5px 0 5px 90px
+}
+.icon_content h4 {
+	line-height: 90%;
+	font-size: 26px
+}
+.icon_content p {
+	margin: 5px 0;
+	line-height: 24px
+}
+.icon_content a {
+	word-wrap: break-word
+}
+.icon_container i {
+	width: 74px;
+	line-height: 74px;
+	border-radius: 50%;
+	background: linear-gradient(to right, #6f2524 50%, #171f25 50%);
+	text-align: center;
+	color: #fff;
+	font-size: 42px;
+	margin: 0 20px 10px 0;
+	float: left
+}
+#sitemap {
+	padding-top: 20px
+}
+#sitemap ul li {
+	margin: 0 0 7px 24px;
+	line-height: 25px
+}
+ol {
+	font-weight: 700;
+	color: #2b96c4;
+	font-size: 22px
+}
+aside .widget li a, ol p, ul p {
+	font-style: normal;
+	font-weight: 400
+}
+ul p {
+	margin: 0
+}
+.content .column1 .column_inner ol, .content .column1 .column_inner ul {
+	margin: 16px 0 16px 3px
+}
+.content .column1 .column_inner ol li, .content .column1 .column_inner ul li {
+	margin: 0 0 14px 24px;
+	line-height: 24px
+}
+.content .column1 .column_inner ul li:before {
+	font-size: 7px;
+	font-family: icomoon;
+	margin: 0 10px 0 -18px;
+	color: #6f2524
+}
+.content .column1 .column_inner ol li ul li, .content .column1 .column_inner ul li ul li {
+	list-style-type: disc;
+	list-style-image: none
+}
+.content .column1 .column_inner ol li ol li, .content .column1 .column_inner ul li ol li {
+	list-style-type: decimal;
+	list-style-image: none
+}
+.content .column1 .column_inner ol li ul li:before, .content .column1 .column_inner ul li ul li:before {
+	display: none
+}
+.two_columns_66_33.background_color_sidebar>.column2 {
+	padding-top: 20px;
+	padding-bottom: 0;
+	margin-top: -10px
+}
+
+/* sidebar schema reviews */
+#custom_html-2 .review-rating { font-size: 2em; line-height: 110%; color:#c90a02; padding: 5px 0px 10px 0px; }
+#custom_html-2 [itemprop="name"] { display: block; font-size: 0.95em; font-weight: 700; line-height: 120%; text-transform: uppercase; } 
+#custom_html-2 [itemprop="reviewBody"] { font-size: 0.9em; font-style: italic; padding-top: 10px; line-height: 24px;}
+
+aside .widget {
+	margin: 15px 0 25px;
+	padding-bottom: 5px;
+	border: 0
+}
+aside .widget h5 {
+	font-size: 20px;
+	color: #fff;
+	background: #171f25;
+	border-bottom: 4px solid #752e2b;
+	padding: 20px 15px 16px;
+	margin: 0 0 18px;
+	text-align: center
+}
+c {
+	padding: 5px 18px 3px;
+	margin: 0    
+}
+aside .widget li {
+  margin: 0 0 7px 6px;
+}
+aside .widget li:before {
+  display: none;
+}
+aside .widget li a {
+	display: block;
+	font-family: "Alegreya Sans", sans-serif;
+	border-bottom: 1px solid #c9d2d9;
+	padding-bottom: 5px;
+	line-height: 120%!important
+}
+aside .widget li a:hover {
+	text-decoration: none;
+	font-weight: 700
+}
+aside .widget ul li:last-child a {
+	border: 0;
+	padding-bottom: 0
+}
+aside li.current-menu-item a {
+	font-weight: 700;
+	color: #6f2524!important
+}
+.sidebar_logos {
+	margin-bottom: 15px
+}
+#search-2, #search-3 {
+	border: 0;
+	padding: 18px 18px 8px;
+	background: rgba(44,44,44,.15);
+	border-radius: 5px;
+	box-sizing: border-box
+}
+#footer_contact input, .sidebar_thumb a {
+	width: 100%;
+	font-family: Lora, serif;
+	-webkit-box-sizing: border-box
+}
+#search-2 form input[type=text], #search-3 form input[type=text] {
+	width: 65%;
+	font-family: Lora, serif;
+	font-size: 16px!important;
+	font-style: italic;
+	background: #fff;
+	border: 2px solid #fff;
+	color: #4d4d4d;
+	padding: 10px 4%;
+	border-radius: 5px 0 0 5px;
+	margin: 0;
+	transition: all .1s ease-in-out
+}
+#search-2 form input[type=text]:focus, #search-3 form input[type=text]:focus {
+	border: 2px solid #ac5a59
+}
+#search-2 form input[type=submit], #search-3 form input[type=submit] {
+	width: 25%;
+	background: #c90a02;
+	height: 44px;
+	font-size: 13px!important;
+	font-style: normal;
+	border-radius: 0 5px 5px 0;
+	margin-left: -3px
+}
+#search-2 form input[type=submit]:hover, #search-3 form input[type=submit]:hover {
+	width: 26%;
+	margin-left: -6px;
+	background: #dd2d25
+}
+.sidebar_thumb {
+	display: block;
+	height: 84px;
+	position: relative;
+	margin-bottom: 15px;
+	webkit-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out
+}
+.sidebar_thumb a {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding: 0 25px 0 20px;
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 84px!important;
+	text-shadow: 0 0 6px #000, 0 0 8px #000;
+	font-size: 1.4em;
+	font-style: normal;
+	font-weight: 600;
+	box-sizing: border-box
+}
+.sidebar_thumb:hover {
+	opacity: .9
+}
+.sidebar_thumb a:hover {
+	color: #fff;
+	text-decoration: none
+}
+.sidebar_thumb a:hover i {
+	color: #c90a02
+}
+.sidebar_thumb i {
+	float: right;
+	line-height: 84px
+}
+#sidebar_contact {
+	background: url(/wp-content/uploads/2024/08/Barnett-Sidebar-Contact-cta-image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#sidebar_blog {
+	background: url(/wp-content/uploads/2024/11/default-sidebar-img.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.pagination ul li:before {
+	display: none
+}
+#footer_contact .ajax-loader, .info {
+	display: none!important
+}
+.blog_title_holder h1 {
+    text-transform: none;
+    margin-bottom: 20px;
+}
+.blog_title_holder .meta_info {
+	margin-bottom: 20px!important
+}
+.blog_single_holder .blog_title_holder>span {
+	margin: 0 0 25px
+}
+.blog_holder article {
+	padding-bottom: 18px
+}
+.blog_holder article .post_text_inner {
+	padding-bottom: 18px!important;
+	border-bottom: 1px solid #eaeaeb
+}
+.post_text_holder h4 {
+	line-height: 100%
+}
+.post_text_holder h4 a:hover {
+	text-decoration: underline
+}
+.blog_single_holder .blog_title_holder h2 {
+	font-size: 36px;
+	line-height: 100%;
+	font-weight: 700;
+	margin-bottom: 10px
+}
+.blog_holder article h4, .blog_holder2 article h4 {
+	margin-bottom: 5px;
+	text-transform: capitalize !important;
+}
+.create {
+	font-size: .9em
+}
+.published {
+	color: #7993a9
+}
+.single .blog_single_holder {
+	padding-top: 20px
+}
+.archive .blog_holder, .blog .blog_holder {
+	padding-top: 10px
+}
+.blog {
+	.title {
+		background-size: cover;
+	}
+}
+.post-type-archive-results .blog_holder article h4, .blog_holder2 article h4 {
+	text-transform: capitalize !important;
+}
+.post-type-archive-results .title {
+	background-size: cover;
+}
+.search .container_inner2 .two_columns_66_33.grid2>.column1>.column_inner {
+	padding: 10px 50px 0 0
+}
+.search .blog_holder article {
+	padding-bottom: 26px
+}
+.home footer, .page-id-44 footer, .page-id-46 footer, .page-id-387 footer, .page-id-2169 footer {
+	margin-top: 0!important
+}
+footer {
+	margin-top: 40px!important;
+	background: #09100f;
+	background-size: cover
+}
+.footer_top {
+	background: 0 0!important;
+	padding: 35px 1000px 15px
+}
+.footer_top_bar {
+	background: #182128;
+	padding: 30px 0 35px
+}
+.footer_top_bar h3 {
+	color: #fff;
+	font-size: 34px;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 20px
+}
+.footer_top_bar .column4 {
+	text-align: right
+}
+#footer_contact p {
+	margin: 0
+}
+#footer_contact input {
+	padding: 13px;
+	margin-bottom: 0;
+	border: 2px solid #fff;
+	border-radius: 2px;
+	font-size: 15px;
+	font-style: normal;
+	box-sizing: border-box;
+	transition: all .1s ease-in-out
+}
+#footer_contact input[type=submit] {
+	width: 85%;
+	padding: 12px;
+	height: 51px;
+	text-transform: uppercase;
+	line-height: 100%;
+	word-wrap: break-word;
+	white-space: normal;
+	background: #c90a02;
+	border: 0;
+	margin: 0;
+	box-sizing: border-box
+}
+#footer_contact input[type=submit]:hover {
+	background: #dd2d25
+}
+#footer_contact input:focus {
+	border: 2px solid #ac5a59
+}
+#footer_contact .wpcf7-response-output {
+	background: #fff;
+	color: #000!important;
+	padding: 8px;
+	line-height: 120%!important;
+	margin: 14px 0 0;
+	font-size: 16px;
+	font-weight: 700
+}
+#footer_contact span.wpcf7-not-valid-tip {
+	text-align: left;
+	padding: 6px 8px;
+	border: 2px solid red;
+	color: #fff;
+	margin-top: 5px;
+	font-size: 16px
+}
+.footer_top .column1 .schema, .footer_top .column1 p {
+	color: #fff;
+	line-height: 140%;
+	text-align: justify
+}
+.footer_top .column1 .column_inner {
+	padding-right: 100px
+}
+.footer_top .column1 img {
+	margin-bottom: 10px
+}
+.footer_phone {
+	padding-bottom: 20px
+}
+.footer_phone span {
+	display: block;
+	font-size: 1.8em;
+	line-height: 140%;
+	color: #fff
+}
+.footer_phone .ibp {
+	display: inline!important;
+	font-size: 1em
+}
+.footer_phone a {
+	color: #fff;
+	font-weight: 400;
+	text-decoration: none
+}
+.footer_phone i {
+	width: 36px;
+	line-height: 36px;
+	display: inline-block;
+	border-radius: 50%;
+	text-align: center;
+	background: #6f2524;
+	color: #fff;
+	font-size: 24px;
+	margin: 0 12px 0 0
+}
+.footer_top .column2 .column1 .column_inner {
+	padding-right: 30px
+}
+.footer_top ul li {
+	margin: 0 0 6px;
+	padding: 0 0 10px;
+	line-height: 120%!important;
+	border-bottom: 1px solid #682c29
+}
+.footer_top ul li a {
+	font-family: "Alegreya Sans", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px!important;
+	line-height: 100%!important;
+	color: #fff
+}
+.error404 .title {
+	background: url(/wp-content/uploads/2016/02/content-header-default.jpg) -140px top no-repeat;
+	height: 560px
+}
+.page_not_found img {
+	margin-top: 25px
+}
+
+/* Title IX Page */
+.page-id-2967 #title_ix_slider .slider_header {
+	font-size: 3.8em;
+	line-height: 90%;
+}
+
+/* Sexaul Assault Page */
+.page-id-387 #sex_crimes_slider .slider_header {
+	font-size: 3.8em;
+	line-height: 90%;
+}
+#sex_assault_crimes_penalties { background: url(/wp-content/uploads/2018/01/textpanel-city-background.jpg) 50% 50% no-repeat #f4f4f4;
+    background-size: cover;}
+#sex_assault_crimes_penalties i {
+	display: block;
+	margin:0 auto;
+	text-align: center;
+	font-size:50px;
+	margin-bottom:30px;
+}
+#sex_assault_crimes_consequences .column1 .column_inner, #sex_assault_crimes_penalties .column1 .column_inner { padding-right: 35px; }
+#sex_assault_crimes_consequences .column2 .column_inner, #sex_assault_crimes_penalties .column2 .column_inner { padding-left: 35px; }
+#sex_assault_crimes_consequences i { margin-right: 10px; }
+#sex_assault_crimes_aggravated .column1 .column_inner { padding-right: 60px; }
+#sex_assault_crimes_defense .column1 .column_inner { padding-right: 60px; }
+#sex_assault_crimes_defense img { margin-top: 10px; } 
+
+.list-2-columns {
+	-moz-columns:2;
+	     columns:2;
+}
+               
+.schema-video-wrapper {
+	background: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 30px 0;
+    padding: 25px 30px 10px 30px;
+    text-align:center;
+}
+.schema-video-wrapper #schema-meta {
+    display: none;
+}
+.schema-video-wrapper span[itemprop="name"] {
+	font-family: "Alegreya Sans", sans-serif;
+	font-size: 24px;
+	line-height:32px;
+	margin: 0 0 10px 0;
+}
+
+.schema-video-wrapper span[itemprop="description"] {
+	font-family: "Alegreya Sans", sans-serif;
+	font-size: 14px;
+	line-height:18px;
+	margin: 10px 0 10px 0;
+}
+.schema-video-wrapper #schema-videoobject  {
+	border-bottom:4px double #9f0000;
+	padding-bottom:15px;
+}
+
+/* review form styles */
+.page-id-2361 .wpcf7 input, 
+.page-id-2361 .wpcf7 textarea { border: 1px solid #ccc; }
+.page-id-2361 span.wpcf7-not-valid-tip { color: #f00; font-size: .85em; font-weight: normal; display: block; border: 1px solid #f00; padding: 5px; }
+
+/* Child Page */
+.page-child .container_inner .container_inner2 { padding: 30px !important; }
+@media screen and (max-width: 667px) {
+	.page-child .container_inner .container_inner2 { padding: 30px !important; }
+}
+
+@media screen and (max-width: 480px) {
+	.page-child .two_columns_75_25.background_color_sidebar>.column2 {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+}
+
+
+@media (max-width:1440px) {
+#homepage_slider .accreditations_disclaimer, .slider_search {
+	width: 90%
+}
+#homepage_slider .accreditations li {
+	margin: 4% 2% 5% 0!important
+}
+#homepage_about {
+	background: url(/wp-content/uploads/2024/08/barnett-pre-footer.jpg) top left no-repeat #f3f1df!important
+}
+.practice_area_button {
+	min-height: 115px
+}
+#sex_crimes_contact {
+	background-position: -160px 0!important
+}
+#sex_crimes_contact .column2 {
+	background: rgba(243,241,223,.5)
+}
+#sex_crimes_contact .column2 .column_inner {
+	padding: 0 20px
+}
+}
+
+@media (max-width:1300px) {
+#homepage_slider .accreditations_disclaimer, .slider_search {
+	width: 90%
+}
+#sex_crimes_children_slider .caption, #sex_crimes_slider .caption {
+	left: 50%
+}
+
+#homepage_slider .caption {
+	left: 35%
+}
+
+#sex_crimes_children_slider .caption, #title_ix_slider .caption {
+	left: 50%
+}
+.slider_header {
+	font-size: 3.6em
+}
+#homepage_slider .accreditations li img {
+	max-height: 55px!important
+}
+#homepage_practice_areas {
+	padding: 60px 40px 35px
+}
+#homepage_practice_areas h2 {
+	font-size: 32px
+}
+#homepage_practice_areas p {
+	font-size: 15px;
+	line-height: 20px
+}
+
+.redpanel a {
+	font-size: .85em
+}
+#homepage_about {
+	background-position: -140px 0!important
+}
+#homepage_about .attorney_quote {
+	font-size: 2.2em;
+	line-height: 100%
+}
+.accreditations li img {
+	max-height: 70px
+}
+#sex_crimes_contact p {
+	font-size: 17px;
+	line-height: 23px
+}
+#sex_crimes_contact .accreditations_disclaimer {
+	font-size: .8em;
+	line-height: 90%
+}
+}
+
+@media (max-width:1200px) {
+    #homepage_about .accreditations li img {
+        max-height: 72px
+    }
+    #homepage_about .accreditations li {
+        margin: 5% 2 5% 0!important
+    }
+
+    #homepage_sex_crimes .five_columns .column1::after, 
+    #homepage_sex_crimes .five_columns .column2::after, 
+    #homepage_sex_crimes .five_columns .column3::after, 
+    #homepage_sex_crimes .five_columns .column4::after, 
+    #homepage_sex_crimes .five_columns .column5::after {
+        top: 53px;
+        left: 19px;
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media (max-width:1100px) {
+.attorney_quote {
+	font-size: 2em
+}
+.container_inner {
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box
+}
+.slider_header {
+	font-size: 2.6em
+}
+.slider_search {
+	width: 86%
+}
+#homepage_slider .accreditations_disclaimer {
+	width: 85%
+}
+#homepage_slider .accreditations li img {
+	max-height: 50px!important;
+	max-width: 95px
+}
+#homepage_areas_served {
+	background-position: 530px 0!important
+}
+#homepage_sex_crimes .five_columns>.column1>.column_inner {
+	padding: 0 22px 0 0!important
+}
+#homepage_sex_crimes .five_columns>.column2>.column_inner, #homepage_sex_crimes .five_columns>.column3>.column_inner, #homepage_sex_crimes .five_columns>.column4>.column_inner, #homepage_sex_crimes .five_columns>.column5>.column_inner {
+	padding: 0 22px 0 0
+}
+#homepage_practice_areas .column1:first-of-type .column_inner {
+	padding-right: 30px
+}
+
+.accreditations li img {
+	max-height: 50px
+}
+#homepage_about .attorney_quote {
+	font-size: 1.7em
+}
+.footer_top .column1 .schema, .footer_top .column1 p {
+	font-size: .8em;
+	line-height: 130%
+}
+}
+
+@media (max-width:1024px) {
+#sex_crimes_children_slider .caption, #sex_crimes_slider .caption {
+	left: 45%
+}
+#sex_crimes_children_slider .caption, #title_ix_slider .caption {
+	left: 45%
+}
+#homepage_about .accreditations, #homepage_about .accreditations_disclaimer, #sex_crimes_contact .accreditations, #sex_crimes_contact .accreditations_disclaimer {
+	display: none
+}
+header {
+	background: linear-gradient(to bottom, #6f2524 68%, #171f25 32%)!important
+}
+.header_phone_widget .widget:nth-of-type(1) {
+	margin-bottom: 0
+}
+.header_phone_widget .ibp {
+	font-size: 1.4em
+}
+.header_phone_widget a {
+	color: #fff!important
+}
+.textpanel .container_inner {
+	padding-right: 10px;
+	padding-left: 10px
+}
+#homepage_slider {
+	height: 600px;
+	padding: 200px 0 0
+}
+.slider_search input {
+	z-index: 1000!important;
+	font-size: 18px
+}
+.slider_search input[type=submit] {
+	z-index: 1000!important;
+	height: 46px
+}
+#homepage_practice_areas {
+	padding: 50px 30px 25px;
+    background-image:none;
+}
+
+#homepage_practice_areas .two_columns_25_75>.column1 {
+    width:100%;
+    float:none;
+}
+
+#homepage_practice_areas .five_columns>.column1>.column_inner {
+    padding:0 !important;
+}
+
+#homepage_practice_areas .two_columns_25_75>.column2 {
+    width:100%;
+    float:none;
+}
+
+#homepage_practice_areas .two_columns_25_75>.column2>.column_inner {
+    padding:0;
+}
+
+#homepage_about {
+	background-position: -200px -80px!important
+}
+#homepage_sex_crimes {
+	border-radius: 40%/4%
+}
+.redpanel p {
+	font-size: 1.8em
+}
+.redpanel .ibp a {
+	border: 0;
+	padding: 0;
+	font-size: 1em
+}
+#homepage_dui .column1 .column_inner {
+	padding-right: 40px
+}
+.wow {
+	z-index: 1000!important;
+	visibility: visible!important;
+	-webkit-animation: none!important;
+	animation: none!important
+}
+.title {
+	height: 510px!important
+}
+.title .container, .title h1 {
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box
+}
+.textpanel iframe { 
+  max-height: 350px!important;
+ }
+#breadcrumbs {
+	margin-top: 3px
+}
+.slider_phone {
+	font-size: 2em
+}
+.practice_area_sidebar {
+    padding-right: 0px;
+}
+#sex_crimes_intro .column2 .column_inner { 
+  padding: 0px;
+}
+#sex_crimes_intro h5 { 
+  margin-top: 0px;
+}
+#sex_crimes_slider {
+	height: 500px;
+	padding: 245px 0 0
+}
+#title_ix_slider {
+	height: 500px;
+	padding: 245px 0 0
+}
+#sex_crimes_children_slider {
+	height: 500px;
+	padding: 260px 0 0
+}
+#sex_crimes_slider .slider_subheader {
+    font-size: 1.4em;
+}
+.page-id-387 #sex_crimes_slider .slider_header {
+  font-size: 3em;
+}
+#title_ix_slider .slider_subheader {
+    font-size: 1.4em;
+}
+.page-id-2967 #title_ix_slider .slider_header {
+  font-size: 3em;
+}
+#sex_crimes_contact {
+	background-position: -170px -100px!important;
+	padding: 10px 0
+}
+#sex_crimes_contact .column1 {
+	width: 40%
+}
+#sex_crimes_contact .column2 {
+	width: 60%
+}
+#sex_crimes_children_rights .column2 .column_inner {
+    padding-left: 10px;
+}
+#sex_crimes_children_registration .column1, #sex_crimes_children_registration .column2 {
+    margin: 0px;
+}
+.subheader {
+	line-height: 27px
+}
+.page-id-36 .three_columns {
+	padding: 0
+}
+aside .widget h5 {
+	line-height: 100%
+}
+.footer_top_bar {
+	padding: 20px 0 30px
+}
+#footer_contact input {
+	padding: 10px
+}
+#footer_contact input[type=submit] {
+	width: 95%;
+	height: 47px
+}
+.header_phone_widget input[type=text] {
+	width: 84%
+}
+nav.main_menu>ul>li>a {
+	padding: 0 19px
+}
+
+/*resized images */
+#homepage_slider { background-image:url(/wp-content/uploads/2024/08/Barnett-Homepage-Header-Tablet.jpg) no-repeat cover !important; }
+#homepage_practice_areas { background-image:url(/wp-content/uploads/2017/08/homepage-practice-area-background_1024.jpg) !important; }
+#sex_crimes_children_slider { background-image:url(/wp-content/uploads/2017/08/sex-crimes-children-intro-background_1024.jpg) !important; }
+#sex_crimes_slider { background-image:url(/wp-content/uploads/2017/08/sex-crimes-intro-background_1024.jpg) !important; }
+
+/* video pop-up styling */
+.featherlight-iframe .featherlight-content { width: 80%!important; }
+.featherlight .featherlight-inner { width: 100%!important; }   
+}
+
+@media screen and (max-width:990px) {
+    #homepage_sex_crimes .five_columns .column1::after, 
+    #homepage_sex_crimes .five_columns .column2::after, 
+    #homepage_sex_crimes .five_columns .column3::after, 
+    #homepage_sex_crimes .five_columns .column4::after, 
+    #homepage_sex_crimes .five_columns .column5::after {
+        display:none;
+    }
+}
+
+@media (max-width:900px) {
+    .slider_subheader {
+        font-size: 1.6em
+    }
+    .slider_header {
+        font-size: 2.5em
+    }
+
+    #homepage_sex_crimes .five_columns .column1,
+    #homepage_sex_crimes .five_columns .column2,
+    #homepage_sex_crimes .five_columns .column3,
+    #homepage_sex_crimes .five_columns .column4,
+    #homepage_sex_crimes .five_columns .column5 {
+        width: 49%;
+    }
+}
+
+@media (max-width:768px) {
+.content {
+	margin-top: 106px;
+}
+
+#homepage_about, #sex_crimes_contact {
+	background-image: none!important
+}
+header {
+	background: #182128!important;
+	position: fixed;
+}
+header .container_inner {
+	padding: 0 20px
+}
+.header_inner_right {
+	float: right!important
+}
+.header_phone_widget {
+	display: none
+}
+.logo {
+	float: left;
+	margin: 16px 0 15px
+}
+.logo img {
+	top: 0
+}
+.selectnav ul {
+	margin-left: 0;
+	margin-top: 5px
+}
+.selectnav ul li {
+	margin-left: 0;
+	padding: 6px 0 4px;
+	border-bottom: 1px solid #6f2524
+}
+.selectnav ul li a {
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height: 100%
+}
+.selectnav ul li a:focus, .selectnav ul li a:hover {
+	text-decoration: none
+}
+#mobile_header_phone {
+	display: block;
+	background: #6f2524;
+	padding: 5px 0
+}
+#homepage_about .column1, #homepage_sex_crimes .two_columns_66_33 .column2, .sidebar_thumb, #text-7 {
+	display: none
+}
+#mobile_header_phone p {
+	margin: 0;
+	color: #fff;
+	font-family: "Alegreya Sans", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 110%
+}
+#mobile_header_phone a {
+	color: #fff!important;
+	font-family: Lora, serif
+}
+#mobile_header_phone i {
+	margin-right: 3px;
+	color: #182128;
+	font-size: 12px
+}
+.textpanel {
+	padding: 30px 0
+}
+.textpanel .container_inner {
+	padding-right: 25px;
+	padding-left: 25px
+}
+#homepage_slider {
+	background-position: -415px 0;
+	height: 580px;
+	padding: 120px 0 0
+}
+#homepage_slider .caption {
+	left: 35%;
+	width: 65%
+}
+#homepage_dui .column1, #homepage_sex_crimes .two_columns_66_33 .column1 {
+	width: 100%
+}
+#homepage_slider .accreditations li {
+	margin: 4% 1% 5% 0!important
+}
+#homepage_intro h1 {
+	font-size: 38px
+}
+#homepage_intro {
+	padding-top: 25px
+}
+#homepage_sex_crimes {
+	border-radius: 40%/2%
+}
+#homepage_sex_crimes .two_columns_66_33 .column1 .column_inner {
+	padding-right: 0
+}
+
+#homepage_sex_crimes .separator {
+	margin: 5px 0 10px!important
+}
+#homepage_practice_areas {
+	padding: 35px 30px 30px
+}
+#homepage_dui .column1 .column_inner, #homepage_practice_areas .column1:first-of-type .column_inner, #sex_crimes_intro .column1 .column_inner, .page-id-40 .two_columns_66_33 .column1 .column_inner {
+	padding-right: 0
+}
+#homepage_practice_areas .column1, #homepage_practice_areas .column2, #homepage_practice_areas .column3, #homepage_practice_areas .column4, #homepage_practice_areas .column5 {
+	margin: 0
+}
+#homepage_dui .column2 {
+	width: 100%;
+	text-align: center
+}
+.attorney_quote {
+	font-size: 1.6em
+}
+#homepage_about .column2 {
+	width: 100%!important;
+	margin: 0
+}
+#homepage_areas_served {
+	background-position: 370px 0!important
+}
+#homepage_criminal_defense h3 {
+	font-size: 28px
+}
+.title {
+	height: 430px!important
+}
+#sex_crimes_children_slider, #sex_crimes_slider, #title_ix_slider {
+	background-position: -260px 0!important;
+	height: 460px
+}
+body p {
+	line-height: 26px
+}
+.container_inner {
+	width: 100%!important;
+	max-width: 100%!important;
+	box-sizing: border-box
+}
+.container_inner2 .two_columns_66_33.grid2>.column1>.column_inner {
+	padding: 0
+}
+.textpanel ul li {
+	line-height: 24px!important
+}
+.content .column1 .column_inner ol li, .content .column1 .column_inner ul li {
+	line-height: 24px
+}
+.two_columns_66_33.background_color_sidebar>.column2 {
+	margin-top: 0;
+	padding-top: 25px
+}
+.page-id-40 .two_columns_66_33 .column2 {
+	border-top: 1px solid #ccc;
+	display: block;
+	margin-top: 10px;
+	padding-top: 20px
+}
+#sex_crimes_contact .column1 {
+	display: none
+}
+.page-id-40 .three_columns {
+	margin-top: 15px
+}
+#sex_crimes_intro .column1, #sex_crimes_intro .column2 {
+	margin: 0
+}
+.page-id-40 .three_columns .column1, .page-id-40 .three_columns .column2, .page-id-40 .three_columns .column3 {
+	width: 33.33%
+}
+.practice_area_thumb h4 a {
+	font-size: 20px
+}
+.practice_area_thumb p {
+	line-height: 120%
+}
+#sex_crimes_slider {
+	padding: 140px 0 0
+}
+#sex_crimes_slider .caption {
+	width: 60%;
+	left: 40%
+}
+#sex_crimes_slider .slider_subheader {
+	font-size: 1.1em
+}
+#sex_crimes_slider .slider_header {
+	font-size: 4.7em
+}
+#title_ix_slider {
+	padding: 140px 0 0
+}
+#title_ix_slider .caption {
+	width: 60%;
+	left: 40%
+}
+#title_ix_slider .slider_subheader {
+	font-size: 1.1em
+}
+#title_ix_slider .slider_header {
+	font-size: 4.7em
+}
+.slider_phone {
+	font-size: 1.8em
+}
+#sex_crimes_contact {
+	border-top: 5px solid #e8e6d7;
+	border-bottom: 5px solid #e8e6d7;
+  padding: 25px 0px;
+}
+#sex_crimes_contact .column2 {
+	width: 100%;
+	margin: 0
+}
+#sex_crimes_contact .attorney_quote {
+	font-size: 1.9em
+}
+#sex_crimes_consequences .column1, #sex_crimes_consequences .column2 {
+  margin: 0px;
+}
+#sex_crimes_consequences .column1 .column_inner, #sex_crimes_consequences .column2 .column_inner {
+  padding: 0px; 
+}
+#sex_crimes_consequences h2 {
+    text-align: left;
+}
+#sex_crimes_registration .column1 .column_inner {
+    padding-right: 0px;
+}
+#sex_crimes_defenses .column1, #sex_crimes_defenses .column2 {
+  margin: 0px;
+}
+#sex_crimes_defenses .column1 .column_inner, #sex_crimes_defenses .column2 .column_inner {
+  padding: 0px; 
+}
+#sex_crimes_children_slider {
+	padding: 150px 0 0
+}
+.page-id-32 .two_columns_66_33 .column1 .column_inner, .page-id-36 .two_columns_66_33 .column1 .column_inner, .page-id-3168 .two_columns_66_33 .column1 .column_inner {
+	padding-right: 0
+}
+#sex_crimes_children_slider .caption {
+	width: 60%;
+	left: 40%
+}
+#sex_crimes_children_slider .slider_subheader {
+	font-size: 1.6em
+}
+#sex_crimes_children_slider .slider_header {
+	font-size: 4.8em
+}
+#sex_crimes_children_registration .column1 .column_inner, #sex_crimes_children_registration .column2 .column_inner {
+    padding: 0px;
+}
+#sex_crimes_children_rights .column1 .column_inner, #sex_crimes_children_rights .column2 .column_inner {
+    padding: 0px;
+}
+#sex_assault_crimes_consequences .column1 .column_inner, #sex_assault_crimes_penalties .column1 .column_inner { 
+    padding: 0px;
+}
+#sex_assault_crimes_consequences .column2 .column_inner, #sex_assault_crimes_penalties .column2 .column_inner { 
+    padding: 0px;
+}
+#sex_assault_crimes_defense .column1 .column_inner, #sex_assault_crimes_aggravated .column1 .column_inner {
+    padding-right: 0px;
+}
+#sex_assault_crimes_defense .column2 {
+  display: none;
+}
+sex_assault_crimes_penalties .column1, sex_assault_crimes_penalties .column2 {
+  margin: 0px;
+}
+.page-id-36 .title {
+	height: 380px!important
+}
+.page-id-36 iframe {
+	height: 300px!important
+}
+.page-id-36 .three_columns .column1, .page-id-36 .three_columns .column2, .page-id-36 .three_columns .column3 {
+	width: 50%
+}
+.page-id-36 .three_columns .column3 {
+	display: block;
+	margin-top: 30px;
+	width: 100%
+}
+.page-id-36 .two_columns_66_33 .column2 {
+	display: block
+}
+.page-id-32 .title, .page-id-3168 .title {
+	height: 380px!important
+}
+.page-id-32 .two_columns_66_33 .column2, .page-id-3168 .two_columns_66_33 .column2 {
+	margin: 0
+}
+.page-id-32 .two_columns_66_33 .column2 .column_inner, .page-id-3168 .two_columns_66_33 .column2 .column_inner {
+	padding: 20px 0 0
+}
+.page-id-32 .header_underline, .page-id-3168 .header_underline {
+	color: #fff;
+	background: #171f25;
+	border-bottom: 4px solid #752e2b;
+	padding: 12px 15px
+}
+.page-id-32 .header_underline::after, .page-id-32 .header_underline::before, .page-id-3168 .header_underline::before { 
+	display: none
+}
+.page-id-32 .container_inner2 ul, .page-id-3168 .container_inner2 ul {
+	margin: 15px 0 25px
+}
+.page-id-32 .container_inner2 ul li, .page-id-3168 .container_inner2 ul li {
+	font-size: 18px
+}
+footer .two_columns_50_50 .column1, footer .two_columns_50_50 .column2 {
+	width: 50%
+}
+#footer_contact input[type=submit], #homepage_intro .column1, #homepage_intro .column2 {
+	width: 100%
+}
+footer .container_inner {
+	padding: 0 15px
+}
+.footer_top {
+	padding-bottom: 0
+}
+.footer_top .column1 .column_inner {
+	padding-right: 50px
+}
+#footer_top_bar {
+	padding: 20px 0 10px
+}
+.footer_phone span {
+	font-size: 1.5em;
+	line-height: 160%
+}
+.footer_top ul li a {
+	font-size: 15px!important;
+	line-height: 110%
+}
+.footer_top .column1 .schema, .footer_top .column1 p {
+	font-size: .7em;
+	line-height: 130%
+}
+.home .textpanel {
+	display: block!important
+}
+#homepage_intro .column1 .column_inner {
+	padding-right: 0!important
+}
+.redpanel a {
+	font-size: 1.7em;
+	padding: 10px;
+	width: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	margin-top: 18px
+}
+#homepage_areas_served .column1, #homepage_criminal_defense .column1, #homepage_criminal_defense .column2, .redpanel .two_columns_75_25 .column1, .redpanel .two_columns_75_25 .column2 {
+	width: 100%;
+	margin: 0
+}
+.redpanel i {
+	display: none
+}
+.redpanel {
+	text-align: center
+}
+#homepage_areas_served .column1 .column_inner {
+	padding-right: 0
+}
+#homepage_about .accreditations, #homepage_about .accreditations_disclaimer {
+	display: block;
+	margin-top: 40px
+}
+#homepage_mobile {
+	display: none!important;
+	padding-top: 0
+}
+
+/* resized images */
+#homepage_practice_areas { background-image:url(/wp-content/uploads/2017/08/homepage-practice-area-background_768.jpg) !important; }
+
+.schema-video-wrapper {
+    margin: 20px 0;
+    padding: 15px 15px 10px 15px;
+}
+.list-2-columns {
+	-moz-columns:1;
+	     columns:1;
+}
+
+}
+
+@media only screen and (max-width:667px) {
+.logo {
+	padding: 20px 0 !important;
+}
+.accreditations, .accreditations a {
+	display: flex;
+	flex-direction: column;	
+	justify-content: center;
+	align-items: center;
+}
+.accreditations img {
+	max-width: 100% !important;
+	max-height: 100% !important;
+ }
+.content {
+	margin-top: 93px;
+}
+h3 { 
+  font-size: 30px;
+}
+header .container_inner {
+	padding: 0 15px
+}
+.logo {
+	margin: -1px 0 0
+}
+.logo a {
+	height: 36px!important
+}
+.selectnav_button {
+	padding: 18px 0
+}
+.selectnav ul {
+	padding-top: 5px
+}
+.selectnav ul li {
+	margin-left: 0;
+	padding: 2px 0;
+	border-bottom: 1px solid #6f2524
+}
+.selectnav ul li a {
+	font-size: 13px;
+	line-height: 90%
+}
+.block_spacer, .home .textpanel {
+	display: none
+}
+.textpanel .container_inner {
+	padding: 0 20px!important
+}
+.textpanel iframe, iframe {
+  max-height: 200px!important;
+}
+.textpanel h2 {
+  font-size: 32px;
+}
+.two_column_list { 
+  -webkit-column-count: 1; -webkit-column-gap: 26px; -moz-column-count: 1; column-count: 1; margin: 15px 0px 20px 0px!important; 
+  }
+.content_width_75 {
+    width: 95%;
+    font-size: 1.1em;
+} 
+#homepage_slider {
+	display: block;
+	height: 330px;
+	background: url(/wp-content/uploads/2024/08/Barnett-Homepage-Header-Mobile.jpg) #000!important;
+	padding: 235px 0 0;
+    background-size:cover !important;
+    background-position: center;
+    
+}
+#homepage_slider .caption {
+	left: 0;
+	width: 100%;
+	padding: 15px
+}
+.slider_search {
+	box-sizing: border-box;
+	z-index: 1000!important;
+	display: none;
+	margin: 15px auto 0;
+	padding: 10px 8px
+}
+.slider_search input {
+	z-index: 1000!important;
+	font-size: 17px
+}
+.slider_search input[type=submit] {
+	z-index: 1000!important;
+	font-size: 10px
+}
+.slider_phone {
+	display: block!important;
+	font-size: 1.6em;
+	letter-spacing: -2px;
+	color: #fff;
+	border-top: 1px solid #6f2524;
+	padding-top: 10px;
+	text-shadow: 0 2px 4px rgba(0,0,0,.6)
+}
+#homepage_slider .accreditations, #homepage_slider .accreditations_disclaimer {
+	display: none
+}
+.slider_subheader {
+	font-size: 1.3em;
+	line-height: 110%;
+	text-shadow: 0 2px 3px rgba(0,0,0,1)
+}
+.slider_header {
+	font-size: 2.1em;
+	text-shadow: 0 2px 8px rgba(0,0,0,.7)
+}
+#homepage_mobile h1 {
+	font-size: 34px!important;
+	text-align: center
+}
+#homepage_mobile .subheader {
+	text-transform: none;
+	font-size: 1.2em;
+	line-height: 26px
+}
+.homepage_mobile_buttons {
+	background: #182128;
+	margin-bottom: 20px;
+	padding: 14px 10px 4px;
+	text-align: center;
+	box-sizing: border-box
+}
+.homepage_mobile_buttons .column1, .homepage_mobile_buttons .column2 {
+	width: 50%;
+	margin: 0
+}
+.homepage_mobile_buttons .column_inner {
+	padding: 0 5px!important
+}
+.homepage_mobile_buttons a {
+	display: block;
+	color: #fff;
+	background: #6f2524;
+	padding: 10px 12px 12px;
+	font-family: "Alegreya Sans", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.2em;
+	line-height: 100%;
+	margin: 0 0 10px;
+	border-bottom: 3px solid #93413e
+}
+.homepage_mobile_buttons a:hover {
+	text-decoration: none;
+	background: #c90a02;
+	border-bottom: 3px solid #c90a02
+}
+
+#homepage_sex_crimes .five_columns .column1,
+#homepage_sex_crimes .five_columns .column2,
+#homepage_sex_crimes .five_columns .column3,
+#homepage_sex_crimes .five_columns .column4,
+#homepage_sex_crimes .five_columns .column5 {
+    width: 100%;
+}
+
+#homepage_practice_areas .five_columns {
+    flex-wrap: wrap;
+}
+
+#homepage_practice_areas p {
+	font-size: 16px;
+	line-height: 23px
+}
+h1 {
+	font-size: 34px!important
+}
+#breadcrumbs {
+	display: none
+}
+.container_inner .container_inner2 {
+	padding: 0 20px
+}
+.title {
+	height: 370px!important
+}
+.page-id-32 .title, .page-id-36 .title, .page-id-3168 .title {
+	height: 290px!important
+}
+.quote_left {
+	margin: 20px 0 25px;
+	font-size: 1.3em
+}
+.practice_area_intro {
+	font-size: 1.1em
+}
+.two_columns_66_33.background_color_sidebar>.column2 {
+	display: block
+}
+.blog_single_holder .blog_title_holder h2 {
+	font-size: 30px
+}
+.page-id-40 .three_columns .column1, .page-id-40 .three_columns .column2, .page-id-40 .three_columns .column3 {
+	width: 100%
+}
+.practice_area_thumb {
+	padding: 0
+}
+.practice_area_thumb h4 a {
+	font-size: 24px
+}
+.practice_area_button {
+	padding: 10px 14px;
+	min-height: 80px
+}
+.page-id-36 iframe {
+	height: 240px!important
+}
+.page-id-36 .three_columns .column1, .page-id-36 .three_columns .column2 {
+	width: 100%;
+	margin: 0
+}
+#sex_crimes_slider {
+	height: 330px;
+	background-position: -250px 0!important;
+	padding: 90px 0 0;
+}
+#sex_crimes_slider .caption {
+	width: 70%;
+	left: 30%
+}
+#sex_crimes_slider .slider_subheader {
+	font-size: .8em;
+	line-height: 110%
+}
+#sex_crimes_slider .slider_header {
+	font-size: 2.6em
+}
+#sex_crimes_slider .slider_phone {
+	font-size: 1.2em;
+	margin-top: 8px;
+	padding-top: 8px
+}
+#title_ix_slider {
+	height: 330px;
+	background-position: -250px 0!important;
+	padding: 90px 0 0
+}
+#title_ix_slider .caption {
+	width: 70%;
+	left: 30%
+}
+#title_ix_slider .slider_subheader {
+	font-size: .8em;
+	line-height: 110%
+}
+#title_ix_slider .slider_header {
+	font-size: 2.6em
+}
+#title_ix_slider .slider_phone {
+	font-size: 1.2em;
+	margin-top: 8px;
+	padding-top: 8px
+}
+#sex_crimes_children_slider {
+	height: 330px;
+	background-position: -260px 0!important;
+	padding: 190px 0 0
+}
+#sex_crimes_children_slider .caption {
+	width: 70%;
+	left: 27%
+}
+#sex_crimes_slider {
+	padding: 55px 0 0
+  }
+.page-id-387 #sex_crimes_slider .slider_header {
+    font-size: 2em;
+}
+.page-id-387 #sex_crimes_slider .slider_subheader {
+	font-size: .6em;
+}
+#title_ix_slider {
+	padding: 55px 0 0
+  }
+.page-id-2967 #title_ix_slider .slider_header {
+    font-size: 2em;
+}
+.page-id-2967 #title_ix_slider .slider_subheader {
+	font-size: .6em;
+}
+#homepage_intro .column1, #homepage_intro .column2, .five_columns>.column1, .five_columns>.column2, .five_columns>.column3, .five_columns>.column4, .five_columns>.column5, footer .two_columns_50_50 .column1, footer .two_columns_50_50 .column2 {
+	width: 100%
+}
+#sex_crimes_children_slider .slider_subheader {
+	font-size: .85em;
+	line-height: 110%;
+	text-shadow: 0
+}
+#sex_crimes_children_slider .slider_header {
+	font-size: 3em;
+	text-shadow: 0
+}
+#sex_crimes_children_slider .slider_phone {
+	font-size: 1.3em;
+	margin-top: 8px;
+	padding-top: 8px;
+	text-shadow: none!important;
+	color: #090f13
+}
+#sex_crimes_contact {
+    padding: 15px 0;
+}
+#sex_crimes_contact .column2 .column_inner {
+    padding: 0px;
+}
+#footer_top_bar {
+	padding: 25px 0px 15px 0
+}
+.footer_top_bar h3 {
+	font-size: 24px
+}
+.footer_top .column1 {
+	margin: 0
+}
+.footer_top .column1 .column_inner, .footer_top .column2 .column1 .column_inner {
+	padding-right: 0
+}
+#homepage_practice_areas .column_inner, .wrapper {
+	padding: 0!important
+}
+.footer_top .column1 .schema, .footer_top .column1 p {
+	line-height: 120%
+}
+.footer_phone {
+	margin-top: 15px
+}
+.footer_phone span {
+	font-size: 1.3em;
+	line-height: 170%
+}
+.menu-footer-menu-1-container, .menu-footer-menu-2-container {
+	display: none
+}
+.wrapper {
+	overflow: hidden;
+	margin: 0!important;
+	box-sizing: border-box
+}
+.home .textpanel {
+	display: block!important
+}
+#homepage_intro .column1 .column_inner {
+	padding-right: 0!important
+}
+.five_columns {
+	margin: 0
+}
+#homepage_practice_areas .column1, #homepage_practice_areas .column2, #homepage_practice_areas .column3, #homepage_practice_areas .column4, #homepage_practice_areas .column5 {
+	margin: 0 0 8px
+}
+#homepage_areas_served .column1, #homepage_areas_served .column2 {
+	margin: 0
+}
+#homepage_areas_served .column1 .column_inner {
+	padding-right: 0
+}
+#homepage_criminal_defense .column1, #homepage_criminal_defense .column2 {
+	width: 100%;
+	margin: 0
+}
+#homepage_about .accreditations, #homepage_about .accreditations_disclaimer {
+	display: block;
+	margin-top: 40px
+}
+#homepage_mobile {
+	display: none!important;
+	padding-top: 0
+}
+.footer_top {
+	background: #09100f!important;
+	display: block;
+	margin: 0;
+	padding: 35px 0;
+	position: relative;
+	text-align: center
+}
+}
+
+@media only screen and (max-width:480px) {
+.home .three_columns .column1, .home .three_columns .column2, .home .three_columns .column3 {
+	width: auto;
+	padding: 0 4%
+}
+}
+.search_result_style {
+	line-height: 2;
+	color: white;
+	font-size: 18px;
+	border-bottom: 1px solid grey;
+	padding: 5px;
+	text-align: left;
+	font-weight: 100
+}
+.search_result_style::before {
+	content: "\25AA ";
+	text-align: left;
+	font-size: 20px;
+	color: #6f2524;
+	padding-right: 5px
+}
+.search_result_style a h3 {
+	text-decoration: none
+}
+.result a {
+	text-decoration: none!important
+}
+ol.hover_here:hover {
+	background-color: #797979;
+}
+
+/* styles for new DUI landing page */
+
+.page-template-page-dui-landing header .logo a { visibility: visible; height: 44px !important; }
+.page-template-page-dui-landing header .logo a img { height:100%; }
+.page-template-page-dui-landing header nav.main_menu > ul > li > a { line-height: 50px !important; }
+.page-template-page-dui-landing header nav.main_menu > ul > li > a span { height: 46px; }
+
+.page-template-page-dui-landing header .container_inner { margin: 0 auto; display:block; }
+
+.page-template-page-dui-landing .dui-hero { margin-top: 110px; }
+.page-template-page-dui-landing .hero-top { padding: 100px 0; 
+	background: #273037; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #273037 0%,#182026 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#273037', endColorstr='#182026',GradientType=0 ); /* IE6-9 */
+	 }
+.page-template-page-dui-landing .hero-top .container_inner { align-items: center; position: relative; }
+.page-template-page-dui-landing .hero-top .container_inner::after { position: absolute; content: ""; background: url(/wp-content/uploads/2020/01/dui-texas.png); height: 910px; top: -60px; left: -200px; width: 920px; background-repeat: no-repeat; background-size:95%; }
+.page-template-page-dui-landing .hero-top .container_inner .column-50 { flex-basis:40%; display:flex; flex-direction: column; }
+.page-template-page-dui-landing .hero-top .container_inner .column-50 h1 { color:white; }
+.page-template-page-dui-landing .hero-top .container_inner .column-50 p { color:white; font-family:"Alegreya Sans", sans-serif; }
+.page-template-page-dui-landing .hero-top .container_inner .column-50 a.button { width: -webkit-min-content; width: -moz-min-content; width: min-content; margin: 15px 0; }
+.page-template-page-dui-landing .hero-top .container_inner .column-50 .phone-number { font-size: 34px; font-family: Lora, serif; font-weight: bold; }
+.page-template-page-dui-landing .hero-top .container_inner .column-50 .phone-number a { color:#fff !important; }
+.page-template-page-dui-landing .hero-top .container_inner .column-50 .logo-container { display: flex; flex-direction: row; justify-content: space-between; margin-top: 30px; }
+
+.page-template-page-dui-landing .hero-bottom { background:#f3f0dd; padding: 50px 0; }
+.page-template-page-dui-landing .hero-bottom .container_inner .column-33 { flex-basis:30%; display:flex; flex-direction: column; }
+.page-template-page-dui-landing .hero-bottom .container_inner .column-66 { flex-basis:60%; display:flex; flex-direction: column; }
+.page-template-page-dui-landing .hero-bottom .container_inner .column-66 p { color: #6F2524; font-family: Lora, serif; font-style: italic; font-size: 24px; line-height: 145%; font-weight:bold; }
+.page-template-page-dui-landing .hero-bottom .container_inner .stars { font-size: 36px; color: #C90A02; display: block; margin: 10px 0; }
+
+.page-template-page-dui-landing ul li { margin: 0 0 0 40px; }
+.page-template-page-dui-landing .button { background:#C90A02; background-image:none; font-size:17px; text-transform:none; padding: 14px 20px; line-height: 100%; }
+.page-template-page-dui-landing .content-block { padding: 0 0 80px 0; background-image: url(/wp-content/uploads/2020/01/bg-content-block.jpg); background-size: 100%; background-repeat: no-repeat; }
+.page-template-page-dui-landing .container_inner { display:flex; justify-content: space-between; flex-direction: row; } 
+.page-template-page-dui-landing .container_inner .column-left { flex-basis:24%; display:flex; flex-direction: column; }
+.page-template-page-dui-landing .container_inner .column-right { flex-basis:70%; display:flex; flex-direction: column; }
+.page-template-page-dui-landing .container_inner .column-right .content-block-container { padding-left: 15%; }
+.page-template-page-dui-landing .container_inner .column-right .content-block-container p, 
+.page-template-page-dui-landing .container_inner .column-right .content-block-container ul li { font-family: "Alegreya Sans", sans-serif; font-weight:100; font-size:20px; line-height: 27px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.page-template-page-dui-landing .container_inner .column-right .content-block-container ul { margin-bottom:20px; }
+.page-template-page-dui-landing .container_inner .column-right .content-block-container .red { color:#6F2524; margin:0 0 -18px 0; font-weight:bold; } 
+.page-template-page-dui-landing .container_inner .column-right .content-block-container .red.spaced { margin-bottom:-8px; } 
+.page-template-page-dui-landing .container_inner .column-right .content-block-container h3 { font-family: "Alegreya Sans", sans-serif; color:#6F2524; margin-top:50px; } 
+.page-template-page-dui-landing .container_inner .column-right h2 { display: block; text-align: center; line-height: 300px; background:black; color:white; position: relative; box-shadow: inset -180px -1px 89px -54px rgba(111,37,36,1); background-size: cover; background-position: center left; }
+.page-template-page-dui-landing .container_inner .column-right h2:after { border-right: 1000px solid#6F2524; content: ""; position: absolute; height: 100%; left: 0; width: 100%; top:0; }
+.page-template-page-dui-landing .container_inner .column-right .spacer-60 { display: block; width: 100%; height: 60px; }
+.page-template-page-dui-landing .container_inner .column-right .spacer-120 { display: block; width: 100%; height: 120px; }
+.page-template-page-dui-landing .container_inner .column-right .video-box { padding-left:100px; padding-bottom:60px; background:#6F2524; margin-top: 100px; position:relative; color:white; margin-bottom:50px; }
+.page-template-page-dui-landing .container_inner .column-right .video-box:after { border-right: 1000px solid#6F2524; content: ""; position: absolute; height: 100%; left: 0; width: 100%; top:0; }
+.page-template-page-dui-landing .container_inner .column-right .video-box iframe { margin-top:-100px; z-index: 100; position: relative; max-width: 100%; }
+.page-template-page-dui-landing .container_inner .column-right .video-box h3 { color:white; }
+.page-template-page-dui-landing .container_inner .column-right .video-box p { color:white; }
+
+.page-template-page-dui-landing .container_inner .column-right .dwi-summary { text-align:center; background:url(/wp-content/uploads/2020/01/bg-summary.jpg); padding: 100px 0; padding: 100px 0 0; position: relative; margin-bottom: 250px; background-size: cover; background-position: right center; box-shadow: inset -180px -1px 89px -54px rgba(111,37,36,1); }
+.page-template-page-dui-landing .container_inner .column-right .dwi-summary .star-lines { display: block; position: relative; margin: 40px auto 50px; }
+.page-template-page-dui-landing .container_inner .column-right .dwi-summary .introcaps { font-size: 47px; font-family: Lora, serif; font-weight: bold; margin-right: 2px; }
+.page-template-page-dui-landing .container_inner .column-right .dwi-summary:after { border-right: 1000px solid#6F2524; content: ""; position: absolute; height: 100%; left: 0; width: 100%; top:0; }
+.page-template-page-dui-landing .container_inner .column-right .dwi-summary h2 { line-height:100%; background:none; box-shadow: none; }
+.page-template-page-dui-landing .container_inner .column-right .dwi-summary h2:after { display:none; }
+.page-template-page-dui-landing .container_inner .column-right .dwi-summary p { text-align:left; font-family: "Alegreya Sans", sans-serif; font-weight:100; font-size:20px; line-height: 27px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color:white; }
+.page-template-page-dui-landing .container_inner .column-right .dwi-summary iframe { margin: 60px auto -130px; z-index: 10000; position: relative; max-width: 100%; }
+.page-template-page-dui-landing .container_inner .column-right .link-boxes { display: flex; padding-left: 15%; flex-wrap: wrap; justify-content: center; margin-bottom: 100px; }
+.page-template-page-dui-landing .container_inner .column-right .link-boxes a { display: flex; width: 20%; padding: 26px; text-align: center; background: #f5f5e7; margin: 2%; align-items: center; justify-content: center; font-size: 24px; line-height: 100%; font-style: italic; }
+.page-template-page-dui-landing .container_inner .column-right .link-boxes a:hover { background: #C90A02; color:#F3F1DF; }
+
+.page-template-page-dui-landing #sidebar { height:100vh; position:sticky; position: -webkit-sticky; top:150px; padding-left:36px; }
+.page-template-page-dui-landing #sidebar p { font-family:Helvetica, sans-serif; text-transform:uppercase; margin:0; }
+.page-template-page-dui-landing #sidebar ul { margin-bottom:20px; }
+.page-template-page-dui-landing #sidebar ul li { line-height:100%; }
+.page-template-page-dui-landing #sidebar ul li .sidebar-links { font-family:Helvetica, sans-serif; font-size:12px; font-weight: normal; color:#363636; transition:.2s ease all; }
+.page-template-page-dui-landing #sidebar ul li .sidebar-links:hover { padding-left:2px; color:#C90A02; transition:.2s ease all; text-decoration:none; }
+
+.page-template-page-dui-landing #sidebar a.links { font-family: Helvetica, sans-serif !important; text-transform: uppercase; font-size: 14px; color: black; padding: 7px 9px 3px; line-height: 100%; display: inline-block; width: -webkit-max-content; width: -moz-max-content; width: max-content; position:relative; }
+.page-template-page-dui-landing #sidebar a.links.active { background: #C90A02; color:white; }
+.page-template-page-dui-landing #sidebar .links:first-of-type { margin-bottom: 27px !important; }
+.page-template-page-dui-landing #sidebar a.links::before { content: "•"; font-size: 70px; position: absolute; left: -30px; top: 12px; color: #6F2524; }
+.page-template-page-dui-landing #sidebar a.links.active::before { content: "★"; font-size: 25px; position: absolute; left: -30px; top: 6px; color: #C90A02; }
+
+.page-template-page-dui-landing .sidebar-mobile { display:none; } 
+
+/* media queries for new DWI page */
+
+@media screen and (max-width:1260px) {
+.page-template-page-dui-landing .hero-top .container_inner::after { height: 910px; top: -40px; left: -260px; width: 920px; background-repeat: no-repeat; background-size:89%; }
+.page-template-page-dui-landing .hero-bottom { padding: 40px 0; }
+.page-template-page-dui-landing .hero-bottom .container_inner .column-66 p { font-size: 22px; line-height: 135%; }
+.page-template-page-dui-landing ul li { margin: 0 0 0 10px; }
+.page-template-page-dui-landing #sidebar { padding-left: 0; }
+.page-template-page-dui-landing .container_inner .column-right .content-block-container { padding-left: 10%; }
+.page-template-page-dui-landing .container_inner .column-right h2 { line-height: 200px; }
+.page-template-page-dui-landing #sidebar { top: 140px; }
+}
+
+@media screen and (max-width:1024px) {
+.page-template-page-dui-landing #sidebar { padding-left: 30px; }
+.page-template-page-dui-landing .container_inner .column-left { flex-basis: 30%; }
+.page-template-page-dui-landing #sidebar a.links { display:none; }
+.page-template-page-dui-landing #sidebar ul { margin: 0 !important; }
+.page-template-page-dui-landing #sidebar { padding-left: 0; }
+
+.page-template-page-dui-landing .container_inner .column-right h2:after { display:none; }
+.page-template-page-dui-landing .container_inner .column-right .video-box:after { display:none; }
+.page-template-page-dui-landing .container_inner .column-right .dwi-summary:after { display:none; }
+
+.page-template-page-dui-landing .container_inner .column-right { flex-basis: 70%; display: flex; flex-direction: column; padding-right: 1%; }
+.page-template-page-dui-landing .container_inner .column-right .content-block-container { padding-left: 5%; }
+.page-template-page-dui-landing .container_inner .column-right .dwi-summary { padding: 100px 5% 0 0; }
+.page-template-page-dui-landing .container_inner .column-right .link-boxes { padding-left: 0; }
+.page-template-page-dui-landing .container_inner .column-right .video-box { padding-left: 5%; padding-right: 5%; }
+.page-template-page-dui-landing .hero-top .container_inner .column-50 { padding-right: 3%; }
+
+}
+
+@media screen and (max-width:768px) {
+.page-template-page-dui-landing .dui-hero { margin-top: 0px; }
+.page-template-page-dui-landing .hero-top { overflow-x: hidden; }
+.page-template-page-dui-landing .hero-top .container_inner::after { top: -80px; left: 23%; width: 100%; background-repeat: no-repeat; background-size: 44%; z-index: 0; }
+.page-template-page-dui-landing .hero-top .container_inner .column-50:first-of-type { display: none; }
+.page-template-page-dui-landing .hero-top .container_inner .column-50 { display: block; width: 90%; z-index: 1; margin: 0 5% auto; text-align: center; position: relative; padding-top: 130px; }
+.page-template-page-dui-landing .hero-top .container_inner .column-50 .logo-container { justify-content: space-evenly; }
+.page-template-page-dui-landing .hero-bottom .container_inner .column-33 { flex-basis: 30%; display: flex; flex-direction: column; display: none; }
+.page-template-page-dui-landing .hero-bottom .container_inner .column-66 { display: block; width: 90%; margin: 0 5%; }
+.page-template-page-dui-landing .container_inner { display: block; }
+.page-template-page-dui-landing #sidebar { height: auto; position: relative; display: block; width: auto; top: 0 !important; }
+.page-template-page-dui-landing .container_inner .column-right { position: relative; z-index: 0; }
+.page-template-page-dui-landing .container_inner .column-right .content-block-container { padding: 0 5%; }
+.page-template-page-dui-landing .container_inner .column-right .link-boxes { padding-left: 0; }
+.page-template-page-dui-landing .hero-top .container_inner::before {
+    top: -80px;
+    left: 23%;
+    width: 100%;
+    background-repeat: no-repeat !important;
+    background-size: 44% !important;
+    z-index: 0;
+    position: absolute;
+    content: "";
+    background: url(/wp-content/uploads/2020/01/dui-texas.png);
+    height: 510px;
+    background-position: center top;
+    left: auto;
+    background-size: 50% !important;
+
+}.page-template-page-dui-landing .hero-top .container_inner::after { display: block !important; content: ""; position: absolute !important; z-index: 0 !important; width: 100% !important; height: 300px !important; top: -50px; left: 0 !important; /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(39,48,55,0) 0%,rgba(39,48,55,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00273037', endColorstr='#273037',GradientType=0 ); /* IE6-9 */
+	 }
+.page-template-page-dui-landing .hero-top { background: #273037; }
+.page-template-page-dui-landing #sidebar a.links { display: block; margin-bottom: 20px; }
+.page-template-page-dui-landing #sidebar ul { margin: 0 !important; display: none; }
+.page-template-page-dui-landing #sidebar { margin-left: calc(5% + 30px) !important; margin-bottom:50px; padding-top: 70px; }
+.page-template-page-dui-landing #sidebar::before { content: "navigate the page"; position: absolute; top: 10px; left: -30px; color: #6F2524; text-transform: uppercase; font-family: "Alegreya Sans", sans-serif; font-weight: bold; font-size: 30px; }
+
+
+.page-template-page-dui-landing .content-block .sidebar-mobile {
+	position: sticky;
+	position: -webkit-sticky; 
+	height: auto;
+	top: 0px !important;
+	z-index: 1000;
+	right: auto;
+	display:block;
+  }
+.page-template-page-dui-landing .content-block .sidebar-mobile .menu-list {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 90%;
+	height: 100vh;
+	margin: 0 0 0 0;
+	transition: all 200ms ease-in;
+	z-index: 450;
+	background:#f2f1df;
+	padding: 5%;
+	opacity:0;
+	box-sizing: border-box;
+	/* end ul */
+  }
+.page-template-page-dui-landing .content-block .sidebar-mobile label {
+	display: block;
+	transition: all 200ms ease-in;
+	z-index: 500;
+	cursor: pointer;
+  }
+  .page-template-page-dui-landing .content-block .sidebar-mobile label.menu-label {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    font-size: 1em;
+    padding: 9px 12px;
+    z-index: 1000;
+    background: #f5f5e7;
+	border-radius: 50%;
+	
+}
+.page-template-page-dui-landing .content-block .sidebar-mobile label.menu-label span {
+	/* hamburger icon */
+	position: relative;
+	margin: 12px auto;
+	text-indent: -9999px;
+	transition: all .1s ease-in;
+	width: 20px;
+	height: 3px;
+	background-color: #6F2524;
+	display: block;
+  }
+.page-template-page-dui-landing .content-block .sidebar-mobile label.menu-label span:before, 
+.page-template-page-dui-landing .content-block .sidebar-mobile label.menu-label span:after {
+	content: '';
+	position: absolute;
+	top: -8px;
+	transition: all .1s ease-in;
+	width: 20px;
+	height: 3px;
+	background-color: #6F2524;
+	display: block;
+  }
+.page-template-page-dui-landing .content-block .sidebar-mobile label.menu-label span:after {
+	top: 8px;
+  }
+.page-template-page-dui-landing .content-block .sidebar-mobile label.menu-label:hover span {
+	background-color: #6F2524;
+  }
+.page-template-page-dui-landing .content-block .sidebar-mobile label.menu-label:hover span:before, 
+.page-template-page-dui-landing .content-block .sidebar-mobile label.menu-label span:after {
+	background-color: #6F2524;
+  }
+.page-template-page-dui-landing .content-block .sidebar-mobile input#menu[type="checkbox"] {
+	display: none;
+  }
+.page-template-page-dui-landing .content-block .sidebar-mobile input#menu[type="checkbox"]:checked ~ .menu-list {
+	margin: 0;
+	opacity: 1;
+  }
+.page-template-page-dui-landing .content-block .sidebar-mobile input#menu[type="checkbox"]:checked ~ label.menu-label span {
+	/* cross icon */
+	background-color: transparent;
+  }
+.page-template-page-dui-landing .content-block .sidebar-mobile input#menu[type="checkbox"]:checked ~ label.menu-label span:before {
+	top: -15px;
+	transform: translateY(15px) rotateZ(45deg);
+  }
+.page-template-page-dui-landing .content-block .sidebar-mobile input#menu[type="checkbox"]:checked ~ label.menu-label span:after {
+	top: 15px;
+	transform: translateY(-15px) rotateZ(-45deg);
+  }
+.page-template-page-dui-landing .content-block .sidebar-mobile input#menu[type="checkbox"]:checked ~ label.menu-label:hover span:before, 
+.page-template-page-dui-landing .content-block .sidebar-mobile input#menu[type="checkbox"]:checked ~ label.menu-label:hover span:after {
+	background-color: #C2C1C1;
+  }
+.page-template-page-dui-landing .content-block .sidebar-mobile input#menu:checked + label.menu-label:after {
+	/* pseudo hiding plus icon */
+	content: "";
+	position: absolute;
+	top: -1px;
+	left: -77px;
+	bottom: -5px;
+	width: 76px;
+	height: 73px;
+  }
+  .page-template-page-dui-landing .content-block .sidebar-mobile .btt {
+    position: absolute;
+    z-index: 100000;
+    background: #f5f5e7;
+    right: 10px;
+    top: 70px;
+    line-height: 0;
+    padding: 10px 14px 11px;
+    border-radius: 50%;
+	font-size: 34px;
+}
+
+  
+  /* end nav */
+
+.page-template-page-dui-landing .sidebar-mobile p { font-family:Helvetica, sans-serif; text-transform:uppercase; margin:0; }
+.page-template-page-dui-landing .sidebar-mobile ul { margin-bottom:20px; }
+.page-template-page-dui-landing .sidebar-mobile ul li { line-height:100%; }
+.page-template-page-dui-landing .sidebar-mobile ul li .sidebar-links { font-family:Helvetica, sans-serif; font-size:12px; font-weight: normal; color:#363636; transition:.2s ease all; }
+.page-template-page-dui-landing .sidebar-mobile ul li .sidebar-links:hover { padding-left:2px; color:#C90A02; transition:.2s ease all; text-decoration:none; }  
+.page-template-page-dui-landing .sidebar-mobile a.links { font-family: Helvetica, sans-serif !important; text-transform: uppercase; font-size: 14px; color: black; padding: 7px 9px 3px; line-height: 100%; display: inline-block; width: -webkit-max-content; width: -moz-max-content; width: max-content; position:relative; }
+.page-template-page-dui-landing .sidebar-mobile a.links.active { background: #C90A02; color:white; }
+.page-template-page-dui-landing .sidebar-mobile .links:first-of-type { margin-bottom: 5px !important; display:block;}
+.page-template-page-dui-landing .sidebar-mobile a.links::before { display:none; }
+.page-template-page-dui-landing .sidebar-mobile a.links.active::before { display:none; }
+
+.page-template-page-dui-landing { overflow-x: visible !important; overflow-y: visible !important; }
+.page-template-page-dui-landing .wrapper { overflow-x: visible !important; overflow-y: visible !important; }
+
+.page-template-page-dui-landing .container_inner .column-right .video-box { padding-left: 0; padding: 5%; }
+.page-template-page-dui-landing .container_inner .column-right .dwi-summary { padding: 100px 0 0 0; }
+.page-template-page-dui-landing .container_inner .column-right { padding-right: 0; }
+
+}
+
+@media screen and (max-width:667px) {
+.page-template-page-dui-landing .hero-top .container_inner .column-50 a.button { width: auto; margin: 15px 0; white-space: inherit; line-height: 135%; }
+.page-template-page-dui-landing .logo img { padding: 16px 0px; height: 83% !important; }
+.page-template-page-dui-landing .container_inner .column-right .video-box::before { display: none; }
+.logo img { height: 100% !important; }
+
+}
+
+@media screen and (max-width:480px) {
+.page-template-page-dui-landing .container_inner .column-right .link-boxes a { width: 70%; font-size: 21px; }
+.page-template-page-dui-landing .container_inner .hero-logo { padding: 5%; }
+.page-template-page-dui-landing .hero-top { padding: 100px 0 50px; }
+.page-template-page-dui-landing .container_inner .column-right .link-boxes { margin-bottom: 50px; }
+.page-template-page-dui-landing .container_inner .column-right .dwi-summary { margin-bottom: 180px; padding: 50px 0 0; }
+.page-template-page-dui-landing .container_inner .column-right .content-block-container { padding: 0 6%; }
+.page-template-page-dui-landing .container_inner .column-right .video-box { padding-left: 5%; }
+.page-template-page-dui-landing .container_inner .column-right .video-box::before { border-left: 100px solid#6F2524; content: ""; position: absolute; height: 100%; left: -100px; width: 100%; top: 0; }
+.page-template-page-dui-landing .button { white-space: break-spaces; width: auto; }
+.page-template-page-dui-landing .container_inner .column-right .spacer-120 { height: 40px; }
+.page-template-page-dui-landing .hero-bottom .container_inner .column-66 { margin: 0 10%; width: 80%; }
+.page-template-page-dui-landing #sidebar { margin-left: calc(10% + 30px) !important; }
+.page-template-page-dui-landing .container_inner .column-right .dwi-summary .star-lines { margin: 30px auto 35px; height: 25px; }
+}
+
+@media screen and (max-height:667px) {
+.page-template-page-dui-landing .content-block .sidebar-mobile input#menu[type="checkbox"]:checked ~ .menu-list { overflow-y: scroll; }
+}
+
+.mobile-menu-bottom {
+    display: none;
+}
+
+
+/* Mobile menu adjustments */
+.mobile-search {
+	display: none;
+}
+@media only screen and (max-width: 768px) {
+	
+	.selectnav_button {
+		position: absolute;
+		top: 23px;
+		right: 10px;
+		padding: 0;
+	}
+
+	.selectnav_button.active span {
+		background-image: url('/wp-content/uploads/2023/04/plus.svg') !important;
+		background-size: contain;
+		background-repeat: no-repeat;
+		transform: rotate(45deg);
+		-webkit-filter: invert(1);
+		        filter: invert(1);
+	}
+
+	.header_inner_right {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		background: #182128;
+	}
+	.header_inner_right .main_menu {
+		display: none !important;
+		width: 100%;
+		height: calc(100vh - 106px);
+		background: #182128;
+		position: absolute;
+		top: 106px;
+	}
+	.header_inner_right .main_menu.active {
+		display: block !important;
+	}
+	.main_menu #menu-mobile-menu {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin-top: 50px;
+	}
+	nav.main_menu>ul>li>a {
+		line-height: normal;
+	}
+	nav.main_menu>ul>li>a span {
+		height: auto;
+		padding: 15px 0;
+		font-size: 18px;
+	}
+	nav.main_menu>ul>li:first-child a {
+		padding: 0 19px;
+	}
+	.main_menu #menu-mobile-menu .second, .main_menu #menu-mobile-menu .second .inner2, .main_menu #menu-mobile-menu .second .inner2 ul {
+		width: 100% !important;
+	}
+	.main_menu #menu-mobile-menu .second {
+		position: relative;
+		top: 0;
+		left: 0;
+		display: none !important;
+	}
+	.main_menu #menu-mobile-menu .second.active {
+		display: block !important;
+	}
+	.drop_down ul > li > ul > li > a {
+		padding: 0px 0 12px 10px !important;
+		line-height: 22px !important;
+	}
+
+	.drop_down ul li a span {
+		white-space: break-spaces;
+	}
+	.drop_down .second .inner2 ul li {
+		padding-left: 20px;
+	}
+	.drop_down .second .inner2 ul li.sub:after, .drop_down > ul > li.has_sub:after {
+		content: "";
+		background-image: url('/wp-content/themes/passage/css/img/sub_menu_arrow_right.png');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 30px;
+		width: 30px;
+		position: absolute;
+		right: 20px;
+		top: 5px;
+		display: inline-block;
+		transition: 3ms ease;
+	}
+	.drop_down .second .inner2 ul li.sub:after {
+		top: 2px;
+	}
+	.drop_down .second .inner2 ul li.sub.active:after {
+		top: 17px;
+	}
+	.drop_down .second .inner2 ul li.sub.active:after, .drop_down > ul > li.has_sub.active:after {
+		transform: rotate(90deg);
+	}
+	.drop_down .second .inner2 ul li.sub a {
+		background-image: none !important;
+	}
+	.drop_down .second .inner2 ul li a {
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+		font-size: 15px !important;
+		text-transform: capitalize;
+		padding: 5px 0 5px 10px;
+	}
+	.drop_down .second .inner ul li ul {
+		display: block !important;
+		background-color: #171f25 !important;
+		height: 0 !important;
+		opacity: 0 !important;
+		pointer-events: none !important;
+	}
+	.drop_down .second .inner ul li ul.active {
+		display: block !important;
+		position: relative !important;
+		height: 100% !important;
+		top: 0 !important;
+		left: 0 !important;
+		float: none !important;
+		visibility: visible !important;
+		pointer-events: all !important;
+		opacity: 1 !important;
+	}
+	.drop_down .second .inner2 ul li ul li {
+		border-bottom: 0;
+		padding: 0 0 0 20px !important;
+	}
+	.mobile-search {
+		display: block;
+
+	}
+	.mobile-search #searchform .wrapper{
+		display: flex;
+		justify-content: flex-start;
+    	align-items: center;
+	}
+	.mobile-search #searchform .wrapper input {
+		margin-bottom: 0;
+	}
+	.mobile-search #searchform .wrapper input[type="submit"] {
+		height: 60px;
+		font-family: icomoon !important;
+		font-size: 25px;
+	}
+	.mobile-search #searchform .wrapper .fade {
+		width: 100%;
+	}
+
+    /* updated nav fixes - august 2023 */
+    .header_inner_right .main_menu { height: calc(100vh - 113px); }
+    nav.main_menu ul li { display: block; float: none; padding: 0; margin: 0; background-repeat: no-repeat; background-position: right; z-index: 100; }
+    .drop_down .second .inner2 ul { display: inline-block; float: left; position: relative; width: 100%; padding: 10px 0; }
+    .touch .drop_down ul li:hover .second { height: auto!important; display: block!important; visibility: visible!important; overflow: visible!important; top: 0; position: relative !important; width: 100%; }
+    nav.main_menu #menu-mobile-menu { display: flex; flex-direction: column; width: 100%; margin-top: 50px; height: calc(100% - 110px); position: relative; overflow-y: scroll; overflow-x: hidden; }
+
+    .mobile-menu-bottom { display: flex; align-items: normal; justify-content: space-between; background: #6f2524; border-top: 7px solid #AF3331; }
+    .mobile-menu-bottom .mobile-cta { display: flex; width: 50%; justify-content: center; text-align: center; padding: 0 10px; box-sizing: border-box; align-items: center; position: relative; }
+    .mobile-menu-bottom  .mobile-cta::after { position: absolute; content: ""; height: 60%; top: 20%; width: 1px; border-right: 1px solid white; right: 0; }
+    .mobile-menu-bottom .mobile-cta p { margin: 0; font-size: 12px; font-family: "Alegreya Sans", sans-serif!important; text-transform: uppercase; color: white; }
+    .mobile-menu-bottom .mobile-cta p span.ibp a { color: white; font-size: 24px !important; font-weight: normal !important; font-family: Lora, serif; display: block; line-height: 100%; margin-top: -5px; }
+
+    .mobile-menu-bottom .mobile-search { display: flex; width: 50%; }
+    .mobile-menu-bottom .mobile-search form#searchform { width: 100%; }
+    .mobile-menu-bottom .mobile-search form#searchform input { width: calc(100% - 20px); margin: 0px 0 0 20px; padding: 8px 15px; background-color: #fff; border: 0; outline: 0; font-size: 13px; font-family: 'Open Sans',sans-serif; border-radius: 10px; box-sizing: border-box; }
+    .mobile-menu-bottom .mobile-search form#searchform .wrapper input[type="submit"] { height: 60px; font-family: icomoon !important; font-size: 25px; background-color: transparent !important;  width: auto; margin: 0; }
+
+}
+
+@media only screen and (max-width: 667px) {
+	.header_inner_right .main_menu {
+		top: 67px;
+		height: calc(100vh - 67px);
+	}
+}
+
+/* gravity forms styles */
+
+form#gform_1 { display: flex; width: 100%; justify-content: space-between; align-items: flex-end; }
+form#gform_1 .gform_fields { grid-row-gap: 0 }
+
+@media screen and (max-width:667px) {
+    form#gform_1 .gform_fields { grid-row-gap: 16px; }
+}
+
+form#gform_1 .gform-body.gform_body { width: 75%; align-items: flex-start; display: flex; }
+.gform_heading p { margin-bottom: 20px !important; margin-top: -20px !important; text-align: center; font-size: 14px; color: white; }
+form#gform_1 .gform_footer { display: flex; }
+form#gform_1 .gform_footer.top_label { width: 24%; align-items: flex-end; padding:0; }
+form#gform_1 .gfield_label { display: inline-block; font-size: 16px; font-weight: 700; margin-bottom: 8px; padding: 0; color: white; }
+#footer_contact input[type=submit] { width: 98%; padding: 12px; height: 50px; margin-left: auto; }
+div#field_1_4 { display: none; }
+
+@media screen and (max-width:1024px) {
+    #footer_contact input[type=submit] { width: 98%; padding: 0; height: 43px; margin-left: auto; }
+}
+
+@media screen and (max-width:768px) {
+    form#gform_1 { flex-wrap:wrap; }
+    form#gform_1 .gform-body.gform_body { width: 100%; }
+    form#gform_1 .gform_footer.top_label { width: 24%; align-items: flex-end; padding: 0; margin: 30px auto 0; }
+    #footer_contact input[type=submit] { width: 100%; } 
+}
+
+@media screen and (max-width:667px) {
+    form#gform_1 .gform_footer.top_label { width: 100%; }
+}
+
+/* main continer tablet fix */
+
+body.large .container_inner, 
+body.normal .container_inner, 
+body.large .drop_down2 .second, 
+body.large .drop_down2 .second .inner2, 
+body.normal .drop_down2 .second,
+body.normal .drop_down2 .second .inner2, 
+body.small .drop_down2 .second, 
+body.small .drop_down2 .second .inner2, 
+body.normal .full_width .parallax_content, 
+.full_width .parallax_content {
+    width: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+/* default template adjustments */
+.page-template-default header {
+	height: 114px !important;
+	top: 0 !important
+}
+.page-template-default .title {
+	position: relative !important;
+	top: 114px;
+	height: 200px !important;
+	z-index: 1 !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+}
+.page-template-default .title .container {
+	bottom: unset !important;
+	position: relative !important;
+}
+.page-template-default .container.top_move {
+	margin-top: 200px !important;
+}
+@media screen and (max-width: 768px) {
+	.page-template-default .title {
+		top: 35px;
+	}
+	.page-template-default .container.top_move {
+		margin-top: 0px !important;
+	}
+	/* .page-template-default #mobile_header_phone {
+		display: none !important;
+	} */
+}
+
+footer .address-block { display: flex; justify-content: space-between; align-items: center; gap: 30px; }
+footer .address-block-left, 
+footer .address-block-right { width: 50%; }
+footer .address-block-left iframe { height: 100%; width: 100%; margin: 20px 0; }
+
+@media screen and (max-width: 1024px) {
+    footer .address-block { display: flex; flex-wrap:wrap; }
+	footer .address-block-left, 
+    footer .address-block-right { width: 100%; }
+}

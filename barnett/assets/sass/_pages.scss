@@ -1,0 +1,532 @@
+/**
+ * Page Template Styles
+ *
+ * @package Postali Child
+ * @author Postali LLC
+*/
+
+.single {
+    .body-container {
+        margin-top: 115px;
+
+        .blog-banner {
+            margin-top: 115px;
+            background:$white;
+
+            @include respond(phone) {
+                padding-bottom: 20px;
+            }
+
+            .container {
+                .columns {
+                    .column-66 {
+                        flex-direction: column;
+                        justify-content: center;
+                        text-align: center;
+
+                        @include respond(tab-port) {
+                            width: 100%;
+                        }
+
+                        h1 {
+                            text-transform: none;
+                        }
+
+                        .banner-cta {
+                            padding: 30px;
+                            background: #F4F2E7F4;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            @include respond(tab-port) {
+                                width: 100%;
+                            }
+
+                            @include respond(phone) {
+                                flex-wrap: wrap;
+                            }
+
+                            &-left {
+                                text-align: left;
+
+                                @include respond(phone) {
+                                    text-align: center;
+                                    width: 100%;
+                                    margin-bottom: 30px;
+                                }
+                                
+                                p {
+                                    margin:0;
+
+                                    &:first-of-type {
+                                        font-family: "Alegreya Sans", sans-serif;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+
+                            &-right {
+                                margin-left: 30px;
+
+                                @include respond(phone) {
+                                    text-align: center;
+                                    width: 100%;
+                                    margin-left: 0;
+                                }
+                                
+                                .button_red {
+                                    padding: 11px 35px 9px;
+                                    font-size: 18px;
+                                    margin: 0 auto;
+                                    width: -webkit-fit-content;
+                                    width: -moz-fit-content;
+                                    width: fit-content;
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .container.top_move {
+        margin-top: 0;
+
+        @include respond(phone) {
+            .container_inner {
+                padding: 0 30px;
+    
+                .container_inner2 {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+.page-template-page_practice_area {
+
+    .column-50,
+    .column-66 {
+        @include respond(tab-land) {
+            width:100% !important;
+        }
+    }
+
+    .pa-banner,
+    #cta {
+        background:#F4F2E7F4;
+        margin-top: 114px;
+        padding: 0;
+
+        .container {
+            .columns {
+                align-items: normal;
+                
+                .column {
+                    &-left {
+                        width: 60%;
+                        box-sizing: border-box;
+                        padding: 80px 5%;
+
+                        @include respond(tab-land) {
+                            width:100%;
+                            padding:80px 60px;
+                        }
+                    }
+        
+                    &-right {
+                        width: 40%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 50px;
+                        background-color: #171F25;
+
+                        @include respond(tab-land) {
+                            width:100%;
+                            height:400px;
+                        }
+
+                        .caption {
+                            text-align: center;
+
+                            .slider_subheader {
+                                font-size: 1.8vw;
+                                text-shadow: none;
+                                margin-bottom: 10px;
+
+                                @include respond(tab-land) {
+                                    font-size: 4vw;
+                                }
+
+                                @include respond(phone) {
+                                    font-size: 5vw;
+                                }
+                            }
+
+                            .slider_header {
+                                color:$white;
+                                font-size: 5vw;
+                                text-shadow: none;
+
+                                @include respond(tab-land) {
+                                    font-size: 11vw;
+                                }
+
+                                @include respond(tab-land) {
+                                    font-size: 14vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        p {
+            font-family: "Alegreya Sans", sans-serif;
+            text-transform: none;
+        }
+
+        .button_red {
+            font-size: 18px;
+            padding: 6px 35px 4px;
+            background: #c90a02;
+            border-radius: 0;
+            border-bottom: 7px solid #6f2524;
+            color: #fff;
+            line-height: 210%;
+            transition: $trans;
+
+            &:hover {
+                background: #6f2524;
+                border-bottom: 7px solid #c90a02;
+            }
+        }
+    }
+
+    .pa-banner { 
+        .container {
+            .columns {
+                @include respond(tab-land) {
+                    flex-direction: column-reverse;
+                }
+            }
+        }
+    }
+
+    #panel_1 {
+        .video-box {
+            height: 100%;
+            width: 100%;
+            padding: 20px;
+            border:1px solid $blk;
+
+            h3 {
+                margin-top: 20px;
+            }
+
+            p {
+                font-family: "Alegreya Sans", sans-serif;
+                font-size: 16px;
+                line-height: 145%;
+                font-weight: normal;
+            }
+
+            .video-runtime {
+                background-color: #6f2524;
+                width: 100%;
+                color: white;
+                padding: 10px;
+                font-family: "Alegreya Sans", sans-serif;
+            }
+        }
+    }
+
+    #panel_2 {
+        .column-33 {
+            ul li {
+                margin-bottom: 0;
+
+                a {
+                    padding-bottom: 5px;
+                    padding-top: 5px;
+                }
+            }
+
+            @include respond(tab-land) {
+                .column_inner {
+                    display:none;
+                }
+            }
+
+            #custom_html-2 {
+                border: 1px solid black !important;
+
+                .textwidget {
+                    padding: 5px 30px 25px;
+
+                    .review-stars {
+                        color: #AF3331;
+                        margin-bottom: 15px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    #cta {
+        margin-top: 0;
+        
+        .column-left {
+            p {
+                font-family: Lora, serif;
+            }
+        }
+        
+        .column-right {
+            background: url('/wp-content/uploads/2024/10/barnett-cta.jpg');
+            background-size: cover;
+            background-position: center;
+
+            @include respond(tab-land) {
+                height:600px;
+            }
+
+            @include respond(phone) {
+                height:350px;
+            }
+        }
+    }
+
+    .mobile-sidebar {
+        display:none;
+
+        @include respond(tab-port) {
+            display:block;
+
+            .column-full {
+                ul li {
+                    margin-bottom: 0;
+    
+                    a {
+                        padding-bottom: 5px;
+                        padding-top: 5px;
+                    }
+                }
+    
+                #custom_html-2 {
+                    border: 1px solid black !important;
+    
+                    .textwidget {
+                        padding: 5px 30px 25px;
+    
+                        .review-stars {
+                            color: #AF3331;
+                            margin-bottom: 15px;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.page-template-page_practice_area_child {
+    @include respond(tab-port) {
+        .container_inner .container_inner2 {
+            padding:0 !important;
+        }
+    }
+
+    @include respond(phone) {
+        #mobile_header_phone {
+            padding: 15px 0;
+            margin-top: -20px;
+
+            .container_inner {
+                padding:0 20px;
+                text-align: center;
+            }
+        }
+    }
+
+    .child-banner {
+        margin-top: 50px;
+
+        @include respond(tab-port) {
+            #breadcrumbs {
+                display: none;
+            }
+        }
+
+        .header-block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            align-items: center;
+
+            @include respond(tab-port) {
+                flex-wrap: wrap;
+            }
+
+            .header-left {
+                margin-right: 5%;
+
+                @include respond(tab-port) {
+                    width:100%;
+                    text-align: center;
+                }
+
+                h1 {
+                    bottom: 0;
+                    display: block;
+                    position: relative;
+                    font-size: 65px;
+                    color:$white;
+                    text-transform: none;
+                }
+            }
+
+            .header-right {
+                width:25%;
+                min-width: 250px;
+
+                @include respond(tab-port) {
+                    width:100%;
+                    margin-top: 40px;
+                }
+                
+                .header-cta {
+                    background: #fff;
+                    padding: 30px 35px 55px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    box-sizing: border-box;
+                    text-align: center;
+
+                    @include respond(tab-port) {
+                        max-width: 350px;
+                        margin: 0 auto;
+                    }
+
+                    p {
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        font-family: "Alegreya Sans", sans-serif;
+                        font-size: 22px;
+                    }
+
+                    .button_red {
+                        font-size: 18px;
+                        padding: 10px 35px 9px;
+                        background: #c90a02;
+                        border-radius: 0;
+                        border-bottom: 7px solid #6f2524;
+                        color: #fff;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .top_move {
+        margin-top: 0 !important;
+    }
+
+    .intro {
+        .container {
+            @include respond(tab-port) {
+                padding:0 30px;
+            }
+
+            @include respond(phone) {
+                padding:0 !important;
+            }
+        }
+    }
+    
+    .pre-footer {
+        .column-66 {
+            flex-direction: column;
+            
+            .button_red {
+                font-size: 18px;
+                padding: 6px 35px 4px;
+                background: #c90a02;
+                border-radius: 0;
+                border-bottom: 7px solid #6f2524;
+                color: #fff;
+                line-height: 210%;
+                transition: $trans;
+                width: -webkit-fit-content;
+                width: -moz-fit-content;
+                width: fit-content;
+    
+                &:hover {
+                    background: #6f2524;
+                    border-bottom: 7px solid #c90a02;
+                }
+            }
+
+            p.sans {
+                font-family: "Alegreya Sans", sans-serif;
+                font-size: 20px;
+            }
+        }
+    }
+
+    footer {
+        margin-top: 0 !important;
+    }
+
+    .column2 {
+        aside {
+            ul li {
+                margin-bottom: 0;
+
+                a {
+                    padding-bottom: 5px;
+                    padding-top: 5px;
+                }
+            }
+
+            @include respond(tab-land) {
+                .column_inner {
+                    display:none;
+                }
+            }
+
+            #custom_html-2 {
+                border: 1px solid black !important;
+
+                .textwidget {
+                    padding: 5px 30px 25px;
+
+                    .review-stars {
+                        color: #AF3331;
+                        margin-bottom: 15px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
