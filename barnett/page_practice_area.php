@@ -168,6 +168,11 @@ else { $paged = 1; }
                         
                     </div>
                 </div>
+                <div class="columns">
+                    <div class="column-66 block">
+                        <?php the_field('p5_content_block'); ?>
+                    </div>
+                </div>
             </div>
         </section>
 
