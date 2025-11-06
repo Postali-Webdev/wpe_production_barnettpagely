@@ -150,6 +150,14 @@ else { $paged = 1; }
                     <div class="column-66 block">
                         <?php the_field('p3_content_block'); ?>
 
+                        <?php 
+                        
+                        if( get_field('faq_section_title') ) echo '<h2>' . get_field('faq_section_title') . '</h2>'; 
+                        
+                        if( get_field('faq_content_block') ) echo get_field('faq_content_block'); 
+                        
+                        ?>
+                        
                         <?php if( have_rows('faqs') ): ?>
                         <?php while( have_rows('faqs') ): the_row(); ?>  
                             <div class="accordions">
